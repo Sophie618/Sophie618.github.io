@@ -59,13 +59,6 @@ ninja.data = [{
           window.open("", "_blank");
         },
       },{
-        id: 'social-wechat_id',
-        title: 'Wechat_id',
-        section: 'Socials',
-        handler: () => {
-          window.open("", "_blank");
-        },
-      },{
         id: 'social-google_scholar_url',
         title: 'Google_scholar_url',
         section: 'Socials',
