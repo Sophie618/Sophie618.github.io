@@ -78,6 +78,7 @@ layout: default
             {% endif %}
             {% if site.data.socials.github_username %}
               <a
+                class="github-contact"
                 href="https://github.com/{{ site.data.socials.github_username }}"
                 title="GitHub"
                 aria-label="GitHub"
@@ -85,6 +86,7 @@ layout: default
                 rel="noopener noreferrer"
               >
                 <i class="fa-brands fa-github"></i>
+                <span>{{ site.data.socials.github_username }}</span>
               </a>
             {% endif %}
             {% if site.data.socials.google_scholar_url %}
@@ -103,6 +105,7 @@ layout: default
               </span>
             {% endif %}
           </div>
+          <p class="profile-contact-note">The best way to reach me is via email.</p>
         {% endif %}
       </div>
     {% endif %}

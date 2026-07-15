@@ -89,6 +89,17 @@
     opacity: 0.48;
   }
 
+  > .github-contact {
+    width: auto;
+    gap: 0.32rem;
+
+    span {
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+  }
+
   .profile-contact {
     position: relative;
   }
@@ -147,7 +158,7 @@
     }
 
     span {
-      color: var(--global-theme-color);
+      color: var(--global-link-color);
       font-size: 0.78rem;
       font-weight: 600;
     }
@@ -158,6 +169,13 @@
       font-size: 0.7rem;
     }
   }
+}
+
+.profile-contact-note {
+  margin: 0.65rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  line-height: 1.45;
 }
 
 .home-about {
@@ -188,11 +206,11 @@
 }
 
 [role="main"] a:not(.btn) {
-  color: var(--global-theme-color) !important;
+  color: var(--global-link-color) !important;
 
   &:hover,
   &:focus {
-    color: var(--global-hover-color) !important;
+    color: var(--global-link-hover-color) !important;
   }
 }
 
