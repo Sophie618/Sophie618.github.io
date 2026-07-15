@@ -1,7 +1,5 @@
-@use "variables" as v;
-
 .post-header {
-  margin-bottom: 2.75rem;
+  margin-bottom: 2.35rem;
 
   .post-title {
     letter-spacing: -0.035em;
@@ -15,21 +13,22 @@
 }
 
 .profile {
-  width: min(34%, 330px);
-  margin-left: 3.5rem !important;
+  width: min(31%, 260px);
+  margin: 0.35rem 0 2rem 3.5rem !important;
+  text-align: center;
 
   img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1;
     object-fit: cover;
-    object-position: center 42%;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 1.35rem !important;
-    box-shadow: 0 22px 55px rgba(35, 27, 74, 0.16) !important;
+    object-position: 65% 32%;
+    border: 4px solid color-mix(in srgb, var(--global-theme-color) 18%, var(--global-card-bg-color));
+    border-radius: 50% !important;
+    box-shadow: 0 10px 26px rgba(62, 51, 69, 0.11) !important;
   }
 
   .more-info {
-    margin-top: 1.15rem;
+    margin-top: 1rem;
     color: var(--global-text-color-light);
     font-size: 0.82rem;
     line-height: 1.55;
@@ -42,6 +41,91 @@
       color: var(--global-text-color);
       font-size: 0.94rem;
     }
+
+    .profile-location {
+      margin-top: 0.4rem;
+      font-size: 0.76rem;
+    }
+
+    .profile-links {
+      margin-top: 0.55rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.home-about {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.02rem;
+  line-height: 1.72;
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  h2 {
+    margin: 3.15rem 0 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.55rem;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+
+  .home-greeting {
+    margin-bottom: 1.4rem;
+    font-size: 1.08rem;
+  }
+}
+
+.research-list,
+.plain-highlights {
+  margin-bottom: 0;
+  padding-left: 1.35rem;
+
+  li {
+    margin-bottom: 0.28rem;
+  }
+}
+
+.home-timeline {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 1.3rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  time {
+    padding-top: 0.12rem;
+    color: var(--global-text-color-light);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin: 0 0 0.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  p {
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.62;
+  }
+
+  .timeline-meta {
+    color: var(--global-theme-color);
+    font-size: 0.82rem;
   }
 }
 
@@ -353,7 +437,7 @@
 
 @media (max-width: 767px) {
   .profile {
-    width: 43%;
+    width: min(38%, 220px);
     margin-left: 1.25rem !important;
   }
 
@@ -383,13 +467,26 @@
 
   .profile {
     float: none !important;
-    width: 100%;
-    margin: 0 0 2rem !important;
+    width: min(68%, 220px);
+    margin: 0 auto 2.5rem !important;
 
     img {
-      aspect-ratio: 5 / 4;
-      object-position: center 40%;
+      aspect-ratio: 1;
+      object-position: 65% 32%;
     }
+  }
+
+  .home-about {
+    font-size: 0.98rem;
+
+    h2 {
+      margin-top: 2.6rem;
+    }
+  }
+
+  .timeline-entry {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
   }
 
   .hero-actions,
