@@ -187,6 +187,15 @@
   }
 }
 
+[role="main"] a:not(.btn) {
+  color: var(--global-theme-color) !important;
+
+  &:hover,
+  &:focus {
+    color: var(--global-hover-color) !important;
+  }
+}
+
 .research-list,
 .plain-highlights {
   margin-bottom: 0;

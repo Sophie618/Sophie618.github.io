@@ -55,62 +55,26 @@ code {
   word-wrap: break-word;
 }
 
-// Progress bars
+// Scrolling progress bar
 
-progress {
-  /* Positioning */
+#scroll-progress {
   position: fixed;
   left: 0;
   top: 56px;
-  z-index: 10;
-
-  /* Dimensions */
+  z-index: 1031;
   width: 100%;
-  height: 1px;
-
-  /* Reset the appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
-
-  /* Progress bar container for Firefox/IE10  */
+  height: 3px;
   background-color: transparent;
-
-  /* Progress bar value for IE10  */
-  color: var(--global-theme-color);
-  accent-color: var(--global-theme-color);
+  pointer-events: none;
 }
 
-progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-
-#progress::-webkit-progress-value {
-  background-color: var(--global-theme-color) !important;
-}
-
-#progress::-moz-progress-bar {
-  background-color: var(--global-theme-color) !important;
-}
-
-.progress-container {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 56px;
-  left: 0;
-  height: 5px;
+#scroll-progress .scroll-progress-bar {
   display: block;
-}
-
-.progress-bar {
-  background-color: var(--global-theme-color) !important;
-  width: 0%;
-  display: block;
-  height: inherit;
+  width: 0;
+  height: 100%;
+  background: var(--global-theme-color, #735480) !important;
+  box-shadow: 0 0 5px color-mix(in srgb, var(--global-theme-color, #735480) 30%, transparent);
+  transition: width 80ms linear;
 }
 
 // Themes transition

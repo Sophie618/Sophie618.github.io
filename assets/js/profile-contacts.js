@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const initializeProfileContacts = () => {
   const button = document.getElementById("profile-email-button");
   const popover = document.getElementById("profile-email-popover");
 
@@ -15,7 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
     button.setAttribute("aria-expanded", String(willOpen));
   });
 
-  document.addEventListener("click", (event) => {
+  document.addEventListener(
+    "pointerdown",
+    (event) => {
+      if (!button.parentElement.contains(event.target)) closePopover();
+    },
+    true
+  );
+
+  document.addEventListener("focusin", (event) => {
     if (!button.parentElement.contains(event.target)) closePopover();
   });
 
@@ -25,4 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
       button.focus();
     }
   });
-});
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeProfileContacts, { once: true });
+} else {
+  initializeProfileContacts();
+}
