@@ -28,7 +28,7 @@ latest_posts:
 ---
 
 <div class="home-about">
-  <p class="home-greeting">Hi, I am Yifei Wang(王艺霏).Sophie </p>
+  <p class="home-greeting">Hi, I am Yifei Wang (王艺霏). Feel free to call me Sophie.</p>
 
   <p>
     I am an undergraduate student in the Xu Teli Honors Program at
