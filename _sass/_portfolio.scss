@@ -158,7 +158,7 @@
     }
 
     span {
-      color: var(--global-theme-color);
+      color: var(--global-link-color);
       font-size: 0.78rem;
       font-weight: 600;
     }
@@ -199,11 +199,11 @@
 }
 
 [role="main"] a:not(.btn) {
-  color: var(--global-theme-color) !important;
+  color: var(--global-link-color) !important;
 
   &:hover,
   &:focus {
-    color: var(--global-hover-color) !important;
+    color: var(--global-link-hover-color) !important;
   }
 }
 
