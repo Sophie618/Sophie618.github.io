@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Sophie618.github.io/sitemap.xml
+Sitemap: https://sophie618.github.io/sitemap.xml
