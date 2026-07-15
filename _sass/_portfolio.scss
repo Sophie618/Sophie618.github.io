@@ -46,10 +46,131 @@
       margin-top: 0.4rem;
       font-size: 0.76rem;
     }
+  }
+}
 
-    .profile-links {
-      margin-top: 0.55rem;
+.profile-social-icons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+
+  > a,
+  > span,
+  .profile-icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--global-theme-color);
+    background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-card-bg-color));
+    border: 1px solid color-mix(in srgb, var(--global-theme-color) 28%, var(--global-divider-color));
+    border-radius: 50%;
+    font-size: 0.92rem;
+  }
+
+  > a:hover,
+  .profile-icon-button:hover,
+  .profile-contact-menu[open] .profile-icon-button {
+    color: var(--global-hover-color);
+    border-color: var(--global-hover-color);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  .is-pending {
+    cursor: help;
+    opacity: 0.62;
+  }
+
+  .profile-contact-menu {
+    position: relative;
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+  }
+
+  .profile-contact-popover {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 0.65rem);
+    left: 50%;
+    width: max-content;
+    min-width: 12.5rem;
+    padding: 0.45rem;
+    color: var(--global-text-color);
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 24px rgba(42, 35, 46, 0.14);
+    text-align: left;
+    transform: translateX(-50%);
+
+    &::before {
+      position: absolute;
+      top: -0.35rem;
+      left: 50%;
+      width: 0.65rem;
+      height: 0.65rem;
+      background: var(--global-card-bg-color);
+      border-top: 1px solid var(--global-divider-color);
+      border-left: 1px solid var(--global-divider-color);
+      content: "";
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  .email-options a {
+    display: block;
+    padding: 0.45rem 0.55rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+
+    &:hover {
+      background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-card-bg-color));
+    }
+
+    span,
+    small {
+      display: block;
+    }
+
+    span {
+      color: var(--global-theme-color);
+      font-size: 0.78rem;
       font-weight: 600;
+    }
+
+    small {
+      margin-top: 0.08rem;
+      color: var(--global-text-color-light);
+      font-size: 0.7rem;
+    }
+  }
+
+  .wechat-id {
+    padding: 0.7rem 0.8rem;
+    text-align: center;
+
+    span {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--global-text-color-light);
+      font-size: 0.7rem;
+    }
+
+    code {
+      color: var(--global-theme-color);
+      font-size: 0.82rem;
+      user-select: all;
     }
   }
 }
@@ -126,6 +247,66 @@
   .timeline-meta {
     color: var(--global-theme-color);
     font-size: 0.82rem;
+  }
+}
+
+.latest-placeholder {
+  border-top: 1px solid var(--global-divider-color);
+
+  > div {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.82rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  time,
+  small {
+    color: var(--global-text-color-light);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.72rem;
+  }
+
+  span,
+  a {
+    color: var(--global-theme-color);
+  }
+
+  small {
+    padding: 0.16rem 0.45rem;
+    background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-card-bg-color));
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+}
+
+.blog-intro {
+  max-width: 46rem;
+  margin-bottom: 2.25rem;
+  color: var(--global-text-color-light);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.blog-placeholder {
+  max-width: 43rem;
+  padding: 2rem;
+  background: color-mix(in srgb, var(--global-theme-color) 7%, var(--global-card-bg-color));
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.8rem;
+
+  h2 {
+    margin: 0.25rem 0 0.8rem;
+    font-size: 1.45rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.7;
   }
 }
 
@@ -487,6 +668,14 @@
   .timeline-entry {
     grid-template-columns: 1fr;
     gap: 0.45rem;
+  }
+
+  .latest-placeholder > div {
+    grid-template-columns: 72px minmax(0, 1fr);
+
+    small {
+      display: none;
+    }
   }
 
   .hero-actions,

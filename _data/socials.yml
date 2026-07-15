@@ -1,4 +1,14 @@
 # The icons are displayed in the order defined here.
-email: 1120243123@bit.edu.cn
+emails:
+  - label: BIT email
+    address: 1120243123@bit.edu.cn
+  - label: Personal email
+    address: 3441606266@qq.com
+  - label: Gmail
+    address: yfw29611@gmail.com
 github_username: Sophie618
 cv_pdf: /assets/pdf/wang-yifei-cv-en.pdf
+# Add the Google Scholar URL below to activate its profile icon.
+x_url: https://x.com/sophie81668
+wechat_id: wyfd816421
+google_scholar_url:

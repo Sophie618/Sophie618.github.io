@@ -35,6 +35,62 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.profile.social_icons %}
+          <div class="profile-social-icons" aria-label="Contact and academic profiles">
+            <details class="profile-contact-menu">
+              <summary class="profile-icon-button" title="Email" aria-label="Choose an email address">
+                <i class="fa-solid fa-envelope"></i>
+              </summary>
+              <div class="profile-contact-popover email-options">
+                {% for email in site.data.socials.emails %}
+                  <a href="mailto:{{ email.address }}">
+                    <span>{{ email.label }}</span>
+                    <small>{{ email.address }}</small>
+                  </a>
+                {% endfor %}
+              </div>
+            </details>
+            {% if site.data.socials.x_url %}
+              <a href="{{ site.data.socials.x_url }}" title="X" aria-label="X" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            {% else %}
+              <span class="is-pending" title="X profile link coming soon" aria-label="X profile link coming soon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </span>
+            {% endif %}
+            {% if site.data.socials.wechat_id %}
+              <details class="profile-contact-menu">
+                <summary class="profile-icon-button" title="WeChat" aria-label="Show WeChat ID">
+                  <i class="fa-brands fa-weixin"></i>
+                </summary>
+                <div class="profile-contact-popover wechat-id">
+                  <span>WeChat ID</span>
+                  <code>{{ site.data.socials.wechat_id }}</code>
+                </div>
+              </details>
+            {% else %}
+              <span class="is-pending" title="WeChat link coming soon" aria-label="WeChat link coming soon">
+                <i class="fa-brands fa-weixin"></i>
+              </span>
+            {% endif %}
+            {% if site.data.socials.google_scholar_url %}
+              <a
+                href="{{ site.data.socials.google_scholar_url }}"
+                title="Google Scholar"
+                aria-label="Google Scholar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="ai ai-google-scholar"></i>
+              </a>
+            {% else %}
+              <span class="is-pending" title="Google Scholar profile link coming soon" aria-label="Google Scholar profile link coming soon">
+                <i class="ai ai-google-scholar"></i>
+              </span>
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 

@@ -10,12 +10,12 @@ profile:
   align: right
   image: sophie/profile.jpg
   image_circular: true
+  social_icons: true
   more_info: >
     <p><strong>Sophie Yifei Wang</strong></p>
     <p>Computer Science and Technology</p>
     <p>Beijing Institute of Technology</p>
     <p class="profile-location">Beijing, China</p>
-    <p class="profile-links"><a href="mailto:1120243123@bit.edu.cn">Email</a> · <a href="https://github.com/Sophie618">GitHub</a></p>
 
 selected_papers: false
 social: false
@@ -28,7 +28,7 @@ latest_posts:
 ---
 
 <div class="home-about">
-  <p class="home-greeting">Hi, I am Sophie Yifei Wang.</p>
+  <p class="home-greeting">Hi, I am Yifei Wang(王艺霏).Sophie </p>
 
   <p>
     I am an undergraduate student in the Xu Teli Honors Program at
@@ -102,4 +102,39 @@ latest_posts:
     Beyond research, I build interactive systems for gamified reading, structured video understanding, multi-agent shopping,
     and biological data visualization. See the <a href="{{ '/projects/' | relative_url }}">Projects & Demos</a> page for working videos and links.
   </p>
+
+  <h2 id="latest-posts">Latest Posts</h2>
+
+{% assign sophie_posts = site.posts | where: "sophie_post", true %}
+
+{% if sophie_posts.size > 0 %}
+
+  <div class="latest-placeholder" aria-label="Latest blog posts">
+    {% for post in sophie_posts limit: 3 %}
+    <div>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <small>Read post</small>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="latest-placeholder" aria-label="Latest posts coming soon">
+    <div>
+      <time>Jul 2026</time>
+      <span>Designing Memory for Long-Horizon AI Agents</span>
+      <small>Coming soon</small>
+    </div>
+    <div>
+      <time>Jun 2026</time>
+      <span>From Video Streams to Structured, Actionable Instructions</span>
+      <small>Coming soon</small>
+    </div>
+    <div>
+      <time>May 2026</time>
+      <span>Sparse Features as a Bridge Between Models and Brains</span>
+      <small>Coming soon</small>
+    </div>
+  </div>
+  {% endif %}
 </div>
