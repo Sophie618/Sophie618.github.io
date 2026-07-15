@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Undergraduate Student @ Beijing Institute of Technology | AI Agents & Multimodal Learning
-nav: false
+subtitle: Undergraduate Student @ Beijing Institute of Technology
 nav_order: 1
 
 profile:
@@ -12,10 +11,8 @@ profile:
   image_circular: true
   social_icons: true
   more_info: >
-    <p><strong>Sophie Yifei Wang</strong></p>
-    <p>Computer Science and Technology</p>
+    <p><strong>Computer Science and Technology</strong></p>
     <p>Beijing Institute of Technology</p>
-    <p class="profile-location">Beijing, China</p>
 
 selected_papers: false
 social: false
