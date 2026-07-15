@@ -72,8 +72,8 @@ code {
   display: block;
   width: 0;
   height: 100%;
-  background: var(--global-theme-color, #735480) !important;
-  box-shadow: 0 0 5px color-mix(in srgb, var(--global-theme-color, #735480) 30%, transparent);
+  background: var(--global-theme-color, #5f52dc) !important;
+  box-shadow: 0 0 5px color-mix(in srgb, var(--global-theme-color, #5f52dc) 30%, transparent);
   transition: width 80ms linear;
 }
 
