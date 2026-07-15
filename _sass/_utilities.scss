@@ -81,18 +81,19 @@ progress {
 
   /* Progress bar value for IE10  */
   color: var(--global-theme-color);
+  accent-color: var(--global-theme-color);
 }
 
 progress::-webkit-progress-bar {
   background-color: transparent;
 }
 
-progress::-webkit-progress-value {
-  background-color: var(--global-theme-color);
+#progress::-webkit-progress-value {
+  background-color: var(--global-theme-color) !important;
 }
 
-progress::-moz-progress-bar {
-  background-color: var(--global-theme-color);
+#progress::-moz-progress-bar {
+  background-color: var(--global-theme-color) !important;
 }
 
 .progress-container {
@@ -106,7 +107,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-theme-color) !important;
   width: 0%;
   display: block;
   height: inherit;
