@@ -76,6 +76,17 @@ layout: default
                 <i class="fa-brands fa-x-twitter"></i>
               </span>
             {% endif %}
+            {% if site.data.socials.github_username %}
+              <a
+                href="https://github.com/{{ site.data.socials.github_username }}"
+                title="GitHub"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            {% endif %}
             {% if site.data.socials.google_scholar_url %}
               <a
                 href="{{ site.data.socials.google_scholar_url }}"
