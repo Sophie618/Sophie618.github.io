@@ -17,7 +17,20 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title }}
-      {% if page.cv_pdf %}
+      {% if page.cv_pdf_zh or page.cv_pdf_en %}
+        <span class="cv-downloads float-right" aria-label="Download CV">
+          {% if page.cv_pdf_zh %}
+            <a href="{{ page.cv_pdf_zh | relative_url }}" target="_blank" rel="noopener noreferrer" class="cv-download-link">
+              <i class="fa-solid fa-file-pdf"></i> 中文
+            </a>
+          {% endif %}
+          {% if page.cv_pdf_en %}
+            <a href="{{ page.cv_pdf_en | relative_url }}" target="_blank" rel="noopener noreferrer" class="cv-download-link">
+              <i class="fa-solid fa-file-pdf"></i> English
+            </a>
+          {% endif %}
+        </span>
+      {% elsif page.cv_pdf %}
         <a
           {% if page.cv_pdf contains '://' %}
             href="{{ page.cv_pdf }}"
