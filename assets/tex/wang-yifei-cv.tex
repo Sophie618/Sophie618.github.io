@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[UTF8,scheme=plain]{ctex}
+\usepackage[a4paper,top=1.35cm,bottom=1.35cm,left=1.55cm,right=1.55cm]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+\setmainfont{Avenir Next}
+\setsansfont{Avenir Next}
+\setCJKmainfont{PingFang SC}
+\setCJKsansfont{PingFang SC}
+
+\definecolor{Ink}{HTML}{17151F}
+\definecolor{Muted}{HTML}{64616F}
+\definecolor{Accent}{HTML}{8F168A}
+\definecolor{Rule}{HTML}{D9D5DE}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=Accent,
+  linkcolor=Accent,
+  pdfauthor={王艺霏},
+  pdftitle={王艺霏 - 中文简历},
+  pdfsubject={学术型个人简历},
+  pdfkeywords={AI Agents, Multimodal Learning, Model Interpretability}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\color{Muted}\footnotesize 王艺霏 · 中文简历 · \thepage}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.16em,topsep=0.25em,parsep=0pt,partopsep=0pt}
+\renewcommand{\labelitemi}{\textcolor{Accent}{\raisebox{0.15ex}{\scriptsize\textbullet}}}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.72em}
+  {\large\bfseries\color{Ink} #1}\par
+  \vspace{0.22em}
+  {\color{Rule}\hrule height 0.7pt}
+  \vspace{0.36em}
+}
+
+\newcommand{\entryheading}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    {\bfseries\color{Ink} #1} & {\small\color{Muted} #3} \\
+    {\small\color{Accent} #2} &
+  \end{tabularx}
+  \vspace{-0.28em}
+}
+
+\newcommand{\projectheading}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    {\bfseries\color{Ink} #1} & {\small\color{Muted} #3} \\
+    {\small\color{Muted} #2} &
+  \end{tabularx}
+  \vspace{-0.28em}
+}
+
+\begin{document}
+\color{Ink}
+\sffamily
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  {\fontsize{23}{27}\selectfont\bfseries 王艺霏} &
+  {\fontsize{15}{18}\selectfont\color{Muted} Sophie Yifei Wang} \\
+  \multicolumn{2}{@{}l@{}}{\vspace{0.22em}\large 本科生研究者 · AI 智能体与多模态学习} \\
+  \multicolumn{2}{@{}l@{}}{\vspace{0.34em}\small
+    中国北京 \quad·\quad
+    \href{mailto:1120243123@bit.edu.cn}{1120243123@bit.edu.cn} \quad·\quad
+    \href{https://github.com/Sophie618}{github.com/Sophie618} \quad·\quad
+    \href{https://sophie618.github.io}{sophie618.github.io}}
+\end{tabularx}
+
+\vspace{0.55em}
+{\color{Rule}\hrule height 1.1pt}
+\vspace{0.52em}
+
+\justifying
+北京理工大学徐特立英才班计算机科学与技术专业本科生。研究兴趣集中于
+\textbf{AI Agent、长期记忆、多模态大模型、模型可解释性与人机交互}；
+关注如何将前沿模型能力转化为高效、清晰、对人友好的智能系统。
+
+\cvsection{教育经历}
+
+\entryheading{北京理工大学}{工学学士（在读）· 计算机科学与技术 · 徐特立英才班}{2024.09 -- 至今}
+\begin{itemize}
+  \item 专业综合排名前 15\%，已获保研资格；徐特立英才班教学班班长。
+  \item CET-4 572；全国大学生英语竞赛二等奖。
+\end{itemize}
+
+\cvsection{科研经历}
+
+\entryheading{Threader · 面向对话智能体的长期记忆}{清华大学科研合作 · 共同作者 · NeurIPS 2026 审稿中}{2025.12 -- 2026.05}
+\begin{itemize}
+  \item 针对压缩式记忆的信息丢失、高延迟和高成本问题，参与设计无损长效记忆框架 Threader。
+  \item 提出“主题分割 + 多视角编码 + 多信号检索”范式，完整保留对话信息，并显著提升构建与检索效率、降低 Token 成本。
+  \item 在多项长对话记忆基准上超过 MemGPT、Mem0 等代表性方法，改善智能体长程一致性与响应效率。
+\end{itemize}
+
+\vspace{0.25em}
+\entryheading{SAIL · 脑--模型语义对齐}{北京理工大学 · 共同作者 · NeurIPS 2026 审稿中}{2025.09 -- 2026.05}
+\begin{itemize}
+  \item 参与构建基于稀疏自编码器（SAE）的脑--模型语义对齐框架，研究多模态大模型内部表征的可解释性。
+  \item 将高维视觉特征解耦为单语义概念，并与人类视觉皮层 fMRI 信号进行匹配，揭示模型与腹侧视觉通路的层级对应关系。
+  \item 验证 SAE 特征相较原始模型特征在人脑对齐任务上的性能优势。
+\end{itemize}
+
+\cvsection{实习经历}
+
+\entryheading{字节跳动 · 火山方舟}{产品解决方案实习生 · AI 产品与 MaaS 解决方案}{2026.04 -- 2026.06}
+\begin{itemize}
+  \item 参与面向企业客户的 AI 产品与 MaaS 解决方案设计，梳理大模型能力、业务场景与产品落地路径。
+  \item 支持 ToB AI 场景的方案研究与产品表达，将模型能力转化为可执行的业务解决方案。
+\end{itemize}
+
+\cvsection{代表项目}
+
+\projectheading{Collector+（Collector-AI）}{FastAPI · React · LLM · Prompt Engineering}{2026.01}
+\begin{itemize}
+  \item 构建低延迟信息提取与游戏化阅读助手，将长文本和视频重构为二元预测性问题，并支持收藏内容来源问答。
+  \item 设计 Linear Monolithic 异步管道，将端到端生成延迟压缩至约 15--30 秒；实现微信公众号 / B 站通用内容解析。
+  \item \href{https://github.com/Sophie618/Creator_ai}{代码仓库} · \href{https://collectorai.top/}{在线演示}
+\end{itemize}
+
+\vspace{0.2em}
+\projectheading{FitSnap}{Next.js 16 · React 19 · DeepSeek-V3 · Zustand}{2025.12}
+\begin{itemize}
+  \item 将非结构化教学视频转换为含时间戳、操作分类和关键参数的结构化步骤，实现视频与步骤卡双向联动。
+  \item 构建 Content-Agnostic 生成式 UI，按健身、烹饪等内容类型动态渲染场景组件。
+  \item \href{https://fit-snap-beige.vercel.app/}{在线演示}
+\end{itemize}
+
+\vspace{0.2em}
+\projectheading{BiGEM 数据检索与可视化平台}{React · D3.js · Three.js · Python}{2024.09 -- 2025.10}
+\begin{itemize}
+  \item 清洗并关联 2004--2024 年 iGEM 数据，使用力导向图、树状图和桑基图呈现全球团队合作网络。
+  \item 接入大模型语义分析增强生物元件与历史项目检索；获 2025 iGEM 国际金奖及全球本科生组 Best Software。
+  \item \href{https://gitlab.igem.org/2025/software-tools/bit-china}{代码仓库} · \href{https://2025.igem.wiki/bit-china/software}{项目主页}
+\end{itemize}
+
+\vspace{0.2em}
+\projectheading{Multi-Agent Shopping Assistant}{Python · Vue 3 · MCP · RAG}{2025.11 -- Present}
+\begin{itemize}
+  \item 基于 MCP 协议构建电商智能助手，完成 LLM $\rightarrow$ Router $\rightarrow$ MCP Server $\rightarrow$ Backend API 工具调用链路。
+  \item 使用 Vue 3 构建对话界面，将工具执行结果渲染为可视化商品卡片。
+  \item \href{https://github.com/Sophie618/Multi-Agent}{代码仓库}
+\end{itemize}
+
+\cvsection{荣誉奖项}
+
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}Xr@{}}
+  2025 iGEM 国际遗传工程机器设计竞赛 · 国际金奖、全球本科生组 Best Software & 2025 \\
+  全国大学生数学建模竞赛 · 北京市一等奖 & 2025 \\
+  美国大学生数学建模竞赛（MCM/ICM）· Honorable Mention & 2025 \\
+  全国大学生英语竞赛 · 二等奖 & 2025 \\
+  北京理工大学校级一等、二等奖学金 & 2025
+\end{tabularx}
+
+\cvsection{技术能力}
+
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\raggedright\arraybackslash}p{4cm}@{\hspace{0.35cm}}>{\raggedright\arraybackslash}X@{}}
+  AI 工程 & PyTorch, Prompt Engineering, Structured Output, Function Calling, RAG, Long-context Management \\
+  前端与可视化 & Next.js, React, Vue 3, TypeScript, D3.js, Three.js, Framer Motion \\
+  后端与工程 & Python, FastAPI, Git, Docker, Linux, Data Pipelines \\
+  语言 & 中文（母语），英语（CET-4 572；工作交流能力）
+\end{tabularx}
+
+\vfill
+{\footnotesize\color{Muted}更新于 2026 年 7 月}
+
+\end{document}
