@@ -9,26 +9,33 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects-amp-demos",
-          title: "Projects &amp; Demos",
-          description: "从研究想法到可交互原型：AI 应用、智能体系统与数据可视化。",
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "From research ideas to interactive prototypes in AI products, agent systems, and data visualization.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-curriculum-vitae",
-          title: "Curriculum Vitae",
-          description: "王艺霏（Sophie Wang）· 北京理工大学计算机科学与技术专业本科生",
+        },{id: "nav-cv",
+          title: "CV",
+          description: "王艺霏（Sophie）· 北京理工大学计算机科学与技术专业本科生",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "Notes on AI agents, multimodal learning, interpretability, and building human-centered systems.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
         },{
-        id: 'social-email',
-        title: 'email',
+        id: 'social-emails',
+        title: 'Emails',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%31%31%32%30%32%34%33%31%32%33@%62%69%74.%65%64%75.%63%6E", "_blank");
+          window.open("", "_blank");
         },
       },{
         id: 'social-github',
@@ -44,4 +51,51 @@ ninja.data = [{
         handler: () => {
           window.open("/assets/pdf/wang-yifei-cv-en.pdf", "_blank");
         },
-      },];
+      },{
+        id: 'social-x_url',
+        title: 'X_url',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
+        },
+      },{
+        id: 'social-wechat_id',
+        title: 'Wechat_id',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
+        },
+      },{
+        id: 'social-google_scholar_url',
+        title: 'Google_scholar_url',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
