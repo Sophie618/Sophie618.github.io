@@ -30,12 +30,14 @@ latest_posts:
   <p>
     I am an undergraduate student in the Xu Teli Honors Program at
     <a href="https://www.bit.edu.cn/">Beijing Institute of Technology</a>, majoring in Computer Science and Technology.
-    My work centers on <strong>AI agents, long-term memory, multimodal foundation models, and model interpretability</strong>.
+    My current interests center on <strong>reinforcement learning with long-term memory, self-evolving models,
+    recursive learning and self-improvement, multimodal foundation models, and model interpretability</strong>.
   </p>
 
   <p>
-    I am interested in how intelligent systems can preserve context over long interactions, expose meaningful internal
-    representations, and translate emerging model capabilities into efficient and human-centered products.
+    I am interested in how agents can use memory as part of learning and decision-making, improve their own capabilities
+    through recursive feedback loops, and evolve over long-horizon interactions. I also study multimodal representations
+    and model interpretability.
   </p>
 
   <p>
@@ -47,10 +49,10 @@ latest_posts:
   <h2>Research Interests</h2>
 
   <ul class="research-list">
-    <li>Long-term memory and retrieval for conversational agents</li>
-    <li>Multimodal large language models and sparse representations</li>
+    <li>Reinforcement learning with long-term memory for adaptive agents</li>
+    <li>Self-evolving models, recursive learning, and self-improvement</li>
+    <li>Multimodal foundation models and agentic systems</li>
     <li>Model interpretability and brain–model semantic alignment</li>
-    <li>Human-centered AI systems and intelligent product design</li>
   </ul>
 
   <h2>Research & Experience</h2>
@@ -88,7 +90,6 @@ latest_posts:
   <h2>Selected Highlights</h2>
 
   <ul class="plain-highlights">
-    <li><strong>Top 15%</strong> in the major and qualified for recommended postgraduate admission.</li>
     <li><strong>Best Software & Gold Medal</strong> at the 2025 iGEM Competition.</li>
     <li><strong>Beijing First Prize</strong> in the China Undergraduate Mathematical Contest in Modeling.</li>
   </ul>

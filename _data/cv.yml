@@ -5,8 +5,8 @@ cv:
   website: https://sophie618.github.io/
   image: ""
   summary: >
-    北京理工大学徐特立英才班计算机科学与技术专业本科生。研究兴趣包括 AI Agent、长期记忆、多模态大模型、
-    模型可解释性与人机交互；同时关注如何将前沿模型能力转化为高效、清晰、对人友好的智能产品。
+    北京理工大学徐特立英才班计算机科学与技术专业本科生。研究兴趣包括强化学习与长期记忆的结合、
+    模型自进化与递归式自我改进、多模态基础模型及模型可解释性。
 
   address:
     city: Beijing
@@ -23,7 +23,6 @@ cv:
         start_date: 2024-09
         end_date: present
         highlights:
-          - 专业综合排名前 15%，已获保研资格
           - 徐特立英才班教学班班长
           - CET-4 572；全国大学生英语竞赛二等奖
 
@@ -126,4 +125,4 @@ cv:
     Academic Interests:
       - name: Research Focus
         icon: fa-solid fa-flask
-        keywords: [AI Agents, Agent Memory, Multimodal LLM, Model Interpretability, Human-centered AI]
+        keywords: [RL with Memory, Self-evolving Models, Recursive Self-improvement, Multimodal Foundation Models, Model Interpretability]
