@@ -1,0 +1,48 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+% Template: https://github.com/posquit0/Awesome-CV
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Page layout
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Visual style
+\colorlet{awesome}{awesome-orange}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\enskip\textbar\enskip}
+
+% Personal information
+% Comment out the next line for applications that require a photo-free CV.
+% \photo[rectangle,noedge,right]{assets/profile}头像照片，暂时去除
+\name{Sophie Yifei}{Wang}
+\position{Curriculum Vitae}
+\address{Beijing, China}
+
+\mobile{(+86) 182-1382-0019}
+\email{1120243123@bit.edu.cn}
+\homepage{sophie618.github.io}
+\github{Sophie618}
+
+\quote{AI Agents{\enskip\cdotp\enskip}Reinforcement Learning{\enskip\cdotp\enskip}Memory \& Self-Evolution}
+
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {Last updated: July 2026}
+  {Sophie Yifei Wang~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+\input{resume/education.tex}
+\input{resume/interests.tex}
+\input{resume/research.tex}
+\input{resume/industry.tex}
+\clearpage
+\input{resume/projects.tex}
+\input{resume/skills.tex}
+\input{resume/honors.tex}
+
+\end{document}
