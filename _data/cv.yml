@@ -1,12 +1,13 @@
 cv:
-  name: 王艺霏（Sophie）
+  name: Yifei Wang (Sophie)
   label: Undergraduate Researcher in AI Agents & Multimodal Learning
-  email: 1120243123@bit.edu.cn
-  website: https://sophie618.github.io/
+  email: 1120243123@bit.edu.cn · 3441606266@qq.com · yfw29611@gmail.com
+  website: https://yifeiwang0618.github.io/
   image: ""
   summary: >
-    北京理工大学徐特立英才班计算机科学与技术专业本科生。研究兴趣包括强化学习与长期记忆的结合、
-    模型自进化与递归式自我改进、多模态基础模型及模型可解释性。
+    Undergraduate in the Xu Teli Honors Program at Beijing Institute of Technology, majoring in Computer Science and Technology.
+    Research interests include reinforcement learning with long-term memory, self-evolving models, recursive self-improvement,
+    multimodal foundation models, and model interpretability.
 
   address:
     city: Beijing
@@ -15,95 +16,99 @@ cv:
 
   sections:
     Education:
-      - institution: 北京理工大学
-        location: 北京
+      - institution: Beijing Institute of Technology
+        location: Beijing, China
         url: https://www.bit.edu.cn/
-        area: 计算机科学与技术 · 徐特立英才班
-        studyType: 工学学士（在读）
+        area: Computer Science and Technology · Xu Teli Honors Program
+        studyType: B.Eng. Candidate
         start_date: 2024-09
         end_date: present
         highlights:
-          - 徐特立英才班教学班班长
-          - CET-4 572；全国大学生英语竞赛二等奖
+          - Class representative of the Xu Teli Honors Program
+          - CET-4 572; Second Prize in the National English Competition for College Students
 
     Experience:
-      - company: 清华大学科研合作
-        position: Agent Memory Research · Co-author
-        location: 北京
-        start_date: 2025-12
-        end_date: 2026-05
-        summary: Threader — 无损长效对话记忆框架（NeurIPS 2026 under review）
-        highlights:
-          - 面向传统压缩式记忆的信息丢失、高延迟与高成本问题，参与设计无损长效记忆框架 Threader。
-          - 提出“主题分割 + 多视角编码 + 多信号检索”范式，在完整保留信息的同时显著提升构建效率并降低 Token 成本。
-          - 在多项长对话记忆基准上超过 MemGPT、Mem0 等代表性方法，改善智能体长程一致性与响应效率。
-
-      - company: 北京理工大学
-        position: Multimodal Learning & Neural Interpretability · Co-author
-        location: 北京
-        start_date: 2025-09
-        end_date: 2026-05
-        summary: SAIL — 基于稀疏自编码器的脑—模型语义对齐框架（NeurIPS 2026 under review）
-        highlights:
-          - 参与构建基于稀疏自编码器的脑—模型语义对齐框架，研究多模态大模型内部表征的可解释性。
-          - 将高维视觉特征解耦为单语义概念，并与人类视觉皮层 fMRI 信号进行匹配。
-          - 验证 SAE 特征相较原始模型特征在人脑对齐任务上的性能优势。
-
-      - company: 字节跳动 · 火山方舟
-        position: 产品解决方案实习生
-        location: 北京
+      - company: ByteDance · Volcano Ark
+        position: Product Solutions Intern
+        location: Beijing, China
         start_date: 2026-04
         end_date: 2026-06
-        summary: 面向企业客户的 AI 产品与 MaaS 解决方案设计。
+        summary: Enterprise AI products and MaaS solution design.
         highlights:
-          - 参与梳理大模型能力、业务场景与产品落地路径，支持 ToB AI 产品解决方案设计。
+          - Mapped foundation-model capabilities to business scenarios and product delivery paths for enterprise AI solutions.
+
+      - company: Research Collaboration with Tsinghua University
+        position: Agent Memory Research · Co-author
+        location: Beijing, China
+        start_date: 2025-12
+        end_date: 2026-05
+        summary: Threader — a lossless long-term memory framework for conversational agents (NeurIPS 2026 under review).
+        highlights:
+          - Co-developed Threader to address information loss, latency, and cost in compression-based memory systems.
+          - Introduced a topic-segmentation, multi-view encoding, and multi-signal retrieval pipeline that preserves complete conversations while improving efficiency and reducing token cost.
+          - Outperformed representative systems including MemGPT and Mem0 on long-conversation memory benchmarks.
+
+      - company: Beijing Institute of Technology
+        position: Multimodal Learning & Neural Interpretability · Co-author
+        location: Beijing, China
+        start_date: 2025-09
+        end_date: 2026-05
+        summary: SAIL — sparse-autoencoder-based brain–model semantic alignment (NeurIPS 2026 under review).
+        highlights:
+          - Co-developed a sparse autoencoder framework for interpreting representations inside multimodal foundation models.
+          - Disentangled high-dimensional visual features into monosemantic concepts and aligned them with fMRI signals from the human visual cortex.
+          - Demonstrated that SAE features outperform raw model features in brain-alignment tasks.
 
     Projects:
-      - name: Collector+（Collector-AI）
-        url: https://github.com/Sophie618/Creator_ai
-        summary: 基于线性单体架构的低延迟信息提取与游戏化阅读助手。
+      - name: "[WIP] Multi-Agent Shopping Assistant"
+        url: https://github.com/YifeiWang0618/Multi-Agent
+        start_date: 2025-11
+        end_date: present
+        summary: An MCP-based intelligent shopping assistant.
         highlights:
-          - FastAPI 异步管道将端到端生成延迟压缩至约 15–30 秒。
-          - 实现微信公众号 / B 站通用内容解析，以及基于 React 的“直觉对赌”交互。
+          - Implemented the LLM → Router → MCP Server → Backend API tool-calling pipeline.
+          - Built a Vue 3 conversational interface that renders structured tool results as product cards.
+
+      - name: Collector+ (Collector-AI)
+        url: https://github.com/YifeiWang0618/Creator_ai
+        start_date: 2026-01
+        end_date: 2026-01
+        summary: A low-latency information extraction and gamified-reading assistant built around a linear monolithic architecture.
+        highlights:
+          - Reduced end-to-end generation latency to approximately 15–30 seconds with an asynchronous FastAPI pipeline.
+          - Implemented general-purpose parsing for WeChat articles and Bilibili videos, together with an intuition-driven React interaction flow.
 
       - name: FitSnap
         url: https://fit-snap-beige.vercel.app/
-        summary: 基于视频语义理解的结构化指令生成系统。
+        start_date: 2025-12
+        end_date: 2025-12
+        summary: A structured instruction-generation system for semantic video understanding.
         highlights:
-          - 利用 DeepSeek-V3 将视频字幕转换为包含时间戳、操作分类与关键参数的结构化步骤。
-          - 使用 Next.js 16、React 19 与 Zustand 实现视频与步骤卡双向联动。
+          - Used DeepSeek-V3 to transform video transcripts into timestamped steps with action categories and key parameters.
+          - Built bidirectional synchronization between video playback and step cards with Next.js 16, React 19, and Zustand.
 
-      - name: BiGEM 数据检索与可视化平台
+      - name: BiGEM Data Retrieval and Visualization Platform
         url: https://2025.igem.wiki/bit-china/software
-        summary: 2025 iGEM 国际金奖、全球本科生组 Best Software。
+        start_date: 2024-09
+        end_date: 2025-10
+        summary: Winner of a 2025 iGEM Gold Medal and Best Software in the undergraduate category.
         highlights:
-          - 使用 Python 清洗 20 年竞赛数据，并以 D3.js / Three.js 呈现合作网络与知识关联。
-          - 接入大模型语义分析以增强生物元件与历史项目检索。
-
-      - name: Multi-Agent Shopping Assistant
-        url: https://github.com/Sophie618/Multi-Agent
-        summary: 基于 MCP 协议的电商智能助手平台。
-        highlights:
-          - 完成 LLM → Router → MCP Server → Backend API 工具调用链路。
-          - 使用 Vue 3 构建对话界面并将工具执行结果渲染为商品卡片。
+          - Cleaned and connected 20 years of competition data and visualized collaboration networks with D3.js and Three.js.
+          - Integrated LLM-based semantic analysis to improve retrieval of biological parts and historical projects.
 
     Awards:
-      - title: Best Software · 全球本科生组
+      - title: Honorable Mention
+        date: 2026
+        awarder: Mathematical Contest in Modeling / Interdisciplinary Contest in Modeling
+      - title: Gold Medal & Best Software · Undergraduate Category
         date: 2025
-        awarder: iGEM 国际遗传工程机器设计竞赛
-        summary: 同期获得 2025 iGEM 国际金奖。
-      - title: 全国大学生数学建模竞赛北京市一等奖
+        awarder: iGEM Competition
+      - title: Beijing First Prize
         date: 2025
-        awarder: 全国大学生数学建模竞赛
-      - title: 美国大学生数学建模竞赛 H 奖
+        awarder: China Undergraduate Mathematical Contest in Modeling
+      - title: Second Prize
         date: 2025
-        awarder: MCM/ICM
-      - title: 全国大学生英语竞赛二等奖
-        date: 2025
-        awarder: NECCS
-      - title: 校级一等、二等奖学金
-        date: 2025
-        awarder: 北京理工大学
+        awarder: National English Competition for College Students
 
     Skills:
       - name: AI Engineering
@@ -117,7 +122,7 @@ cv:
         keywords: [Python, FastAPI, Git, Docker, Linux, Data Pipeline]
 
     Languages:
-      - name: 中文
+      - name: Chinese
         summary: Native
       - name: English
         summary: CET-4 572 · Professional working proficiency

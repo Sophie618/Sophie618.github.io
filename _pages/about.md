@@ -59,6 +59,15 @@ latest_posts:
 
   <div class="home-timeline">
     <div class="timeline-entry">
+      <time>Apr 2026 — Jun 2026</time>
+      <div>
+        <h3>Product Solutions Intern · ByteDance Volcano Ark</h3>
+        <p class="timeline-meta">AI Products & MaaS Solutions · Beijing</p>
+        <p>Connected foundation-model capabilities with enterprise scenarios and practical product delivery paths.</p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
       <time>Dec 2025 — May 2026</time>
       <div>
         <h3>Threader · Long-term Memory for Conversational Agents</h3>
@@ -73,15 +82,6 @@ latest_posts:
         <h3>SAIL · Brain–Model Semantic Alignment</h3>
         <p class="timeline-meta">Beijing Institute of Technology · Co-author · NeurIPS 2026 under review</p>
         <p>Studied interpretable multimodal representations by aligning sparse model features with fMRI signals from the human visual cortex.</p>
-      </div>
-    </div>
-
-    <div class="timeline-entry">
-      <time>Apr 2026 — Jun 2026</time>
-      <div>
-        <h3>Product Solutions Intern · ByteDance Volcano Ark</h3>
-        <p class="timeline-meta">AI Products & MaaS Solutions · Beijing</p>
-        <p>Connected foundation-model capabilities with enterprise scenarios and practical product delivery paths.</p>
       </div>
     </div>
 
