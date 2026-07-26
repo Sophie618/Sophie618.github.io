@@ -42,7 +42,7 @@ ninja.data = [{
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/Sophie618", "_blank");
+          window.open("https://github.com/YifeiWang0618", "_blank");
         },
       },{
         id: 'social-cv',
