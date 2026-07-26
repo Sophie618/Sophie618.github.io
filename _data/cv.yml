@@ -2,7 +2,7 @@ cv:
   name: Yifei Wang (Sophie)
   label: Undergraduate Researcher in AI Agents & Multimodal Learning
   email: 1120243123@bit.edu.cn · 3441606266@qq.com · yfw29611@gmail.com
-  website: https://sophie618.github.io/
+  website: https://yifeiwang0618.github.io/
   image: ""
   summary: >
     Undergraduate in the Xu Teli Honors Program at Beijing Institute of Technology, majoring in Computer Science and Technology.
@@ -61,7 +61,7 @@ cv:
 
     Projects:
       - name: "[WIP] Multi-Agent Shopping Assistant"
-        url: https://github.com/Sophie618/Multi-Agent
+        url: https://github.com/YifeiWang0618/Multi-Agent
         start_date: 2025-11
         end_date: present
         summary: An MCP-based intelligent shopping assistant.
@@ -70,7 +70,7 @@ cv:
           - Built a Vue 3 conversational interface that renders structured tool results as product cards.
 
       - name: Collector+ (Collector-AI)
-        url: https://github.com/Sophie618/Creator_ai
+        url: https://github.com/YifeiWang0618/Creator_ai
         start_date: 2026-01
         end_date: 2026-01
         summary: A low-latency information extraction and gamified-reading assistant built around a linear monolithic architecture.

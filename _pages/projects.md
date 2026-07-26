@@ -30,7 +30,7 @@ nav_order: 2
       </ul>
       <div class="tech-row"><span>FastAPI</span><span>React</span><span>LLM</span><span>Prompt Engineering</span></div>
       <div class="project-links">
-        <a href="https://github.com/Sophie618/Creator_ai">GitHub ↗</a>
+        <a href="https://github.com/YifeiWang0618/Creator_ai">GitHub ↗</a>
         <a href="https://collectorai.top/">Live Demo ↗</a>
       </div>
     </div>
@@ -117,7 +117,7 @@ nav_order: 2
         <li>Vue 3 conversational interface with structured product-card rendering</li>
       </ul>
       <div class="tech-row"><span>Python</span><span>Vue 3</span><span>MCP</span><span>RAG</span></div>
-      <div class="project-links"><a href="https://github.com/Sophie618/Multi-Agent">GitHub ↗</a></div>
+      <div class="project-links"><a href="https://github.com/YifeiWang0618/Multi-Agent">GitHub ↗</a></div>
     </div>
     <div class="demo-media">
       <video controls preload="metadata" poster="{{ '/assets/img/sophie/shopping-poster.jpg' | relative_url }}" playsinline>
