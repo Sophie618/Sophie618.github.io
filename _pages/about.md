@@ -70,9 +70,12 @@ latest_posts:
       <div>
         <h3>
           Product Solutions Intern ·
-          <a class="affiliation-link" href="https://www.bytedance.com/en/">
+          <a class="affiliation-link affiliation-link--bytedance" href="https://docs.volcengine.com/docs/82379/?lang=zh">
             <svg class="affiliation-icon affiliation-icon--bytedance" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M19.877 1.468 24 2.534v18.942l-4.123 1.056V1.468zM6.53 10.898l4.115 1.064v8.978L6.53 22.003V10.896zM0 2.572l4.115 1.064v16.736L0 21.428V2.572zm17.455 5.62V19.3l-4.122-1.064V9.257l4.122-1.064z"/>
+              <path d="M14.944 18.587l-1.704-.445V10.01l1.824-.462c1-.254 1.84-.461 1.88-.453.032 0 .056 2.235.056 4.972v4.973l-.176-.008c-.104 0-.952-.207-1.88-.446z" fill="#00c8d2"/>
+              <path d="M7 16.542c0-2.736.024-4.98.064-4.98.032-.008.872.2 1.88.454l1.816.461-.016 4.05-.024 4.049-1.632.422c-.896.23-1.736.445-1.856.469L7 21.523v-4.98z" fill="#3c8cff"/>
+              <path d="M19.24 12.477c0-9.03.008-9.515.144-9.475.072.024.784.207 1.576.406.792.207 1.576.405 1.744.445l.296.08-.016 8.56-.024 8.568-1.624.414c-.888.23-1.728.437-1.856.47l-.24.055v-9.523z" fill="#78e6dc"/>
+              <path d="M1 12.509c0-4.678.024-8.505.064-8.505.032 0 .872.207 1.872.454l1.824.461v7.582c0 4.16-.016 7.574-.032 7.574-.024 0-.872.215-1.88.47L1 21.013v-8.505z" fill="#325ab4"/>
             </svg>
             ByteDance Volcano Ark
           </a>
@@ -95,16 +98,7 @@ latest_posts:
       <time>Sep 2025 — May 2026</time>
       <div>
         <h3>SAIL · Brain–Model Semantic Alignment</h3>
-        <p class="timeline-meta">
-          <a class="affiliation-link" href="https://www.bit.edu.cn/">
-            <img
-              class="affiliation-icon affiliation-icon--seal"
-              src="https://www.bit.edu.cn/images/gb20190805/logo_01.svg"
-              alt=""
-              aria-hidden="true"
-            >Beijing Institute of Technology</a
-          > · Co-author · NeurIPS 2026 under review
-        </p>
+        <p class="timeline-meta">Beijing Institute of Technology · Co-author · NeurIPS 2026 under review</p>
         <p>Studied interpretable multimodal representations by aligning sparse model features with fMRI signals from the human visual cortex.</p>
       </div>
     </div>

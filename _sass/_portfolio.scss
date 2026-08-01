@@ -243,8 +243,10 @@
   border-radius: 50%;
 }
 
-.affiliation-icon--bytedance {
-  fill: var(--global-theme-color);
+.affiliation-link--bytedance,
+.affiliation-link--bytedance:hover,
+.affiliation-link--bytedance:focus {
+  color: var(--global-text-color) !important;
 }
 
 @media (max-width: 319.98px) {
