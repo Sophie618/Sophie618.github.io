@@ -224,6 +224,37 @@
   }
 }
 
+.affiliation-link {
+  display: inline-flex;
+  gap: 0.24rem;
+  align-items: center;
+  white-space: nowrap;
+  vertical-align: -0.12em;
+}
+
+.affiliation-icon {
+  width: 1.08em;
+  height: 1.08em;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.affiliation-icon--seal {
+  border-radius: 50%;
+}
+
+.affiliation-icon--bytedance {
+  fill: var(--global-theme-color);
+}
+
+@media (max-width: 319.98px) {
+  .affiliation-link {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+}
+
 .home-timeline {
   border-top: 1px solid var(--global-divider-color);
 }
