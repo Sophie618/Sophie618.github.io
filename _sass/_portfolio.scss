@@ -244,7 +244,25 @@
 }
 
 .affiliation-icon--bytedance {
-  fill: var(--global-theme-color);
+  fill: #000;
+}
+
+.affiliation-link--bytedance,
+.affiliation-link--bytedance:hover,
+.affiliation-link--bytedance:focus {
+  color: #000 !important;
+}
+
+html[data-theme="dark"] {
+  .affiliation-icon--bytedance {
+    fill: var(--global-text-color);
+  }
+
+  .affiliation-link--bytedance,
+  .affiliation-link--bytedance:hover,
+  .affiliation-link--bytedance:focus {
+    color: var(--global-text-color) !important;
+  }
 }
 
 @media (max-width: 319.98px) {

@@ -70,7 +70,7 @@ latest_posts:
       <div>
         <h3>
           Product Solutions Intern ·
-          <a class="affiliation-link" href="https://www.bytedance.com/en/">
+          <a class="affiliation-link affiliation-link--bytedance" href="https://docs.volcengine.com/docs/82379/?lang=zh">
             <svg class="affiliation-icon affiliation-icon--bytedance" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M19.877 1.468 24 2.534v18.942l-4.123 1.056V1.468zM6.53 10.898l4.115 1.064v8.978L6.53 22.003V10.896zM0 2.572l4.115 1.064v16.736L0 21.428V2.572zm17.455 5.62V19.3l-4.122-1.064V9.257l4.122-1.064z"/>
             </svg>
@@ -95,16 +95,7 @@ latest_posts:
       <time>Sep 2025 — May 2026</time>
       <div>
         <h3>SAIL · Brain–Model Semantic Alignment</h3>
-        <p class="timeline-meta">
-          <a class="affiliation-link" href="https://www.bit.edu.cn/">
-            <img
-              class="affiliation-icon affiliation-icon--seal"
-              src="https://www.bit.edu.cn/images/gb20190805/logo_01.svg"
-              alt=""
-              aria-hidden="true"
-            >Beijing Institute of Technology</a
-          > · Co-author · NeurIPS 2026 under review
-        </p>
+        <p class="timeline-meta">Beijing Institute of Technology · Co-author · NeurIPS 2026 under review</p>
         <p>Studied interpretable multimodal representations by aligning sparse model features with fMRI signals from the human visual cortex.</p>
       </div>
     </div>
