@@ -2,6 +2,14 @@
 
 A simple, clean, and responsive Jekyll theme for academics.
 
+## Site-specific bilingual blog rule
+
+- Every original blog post must be published as a Chinese-English pair. If the user supplies only Chinese or only English, translate it faithfully into the other language before publishing.
+- Preserve all claims, qualifications, section structure, equations, tables, citations, links, and references. Do not summarize, omit, or add arguments during translation.
+- Give each language version its own stable URL and set reciprocal `translation_url` frontmatter links. Use `lang: zh-CN` for Chinese and `lang: en` for English.
+- Include only the primary-language version in the Blog archive (`sophie_post: true`); set its translated counterpart to `sophie_post: false` to avoid duplicate entries.
+- Build and inspect both rendered pages before publishing.
+
 ## Quick Links by Role
 
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
