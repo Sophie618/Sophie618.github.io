@@ -115,7 +115,7 @@ cv:
         icon: fa-solid fa-wand-magic-sparkles
         keywords: [PyTorch, Prompt Engineering, Structured Output, Function Calling, RAG, Long-context Management]
       - name: Frontend & Visualization
-        icon: fa-solid fa-chart-network
+        icon: fa-solid fa-chart-line
         keywords: [Next.js, React, Vue 3, TypeScript, D3.js, Three.js, Framer Motion]
       - name: Backend & Engineering
         icon: fa-solid fa-code

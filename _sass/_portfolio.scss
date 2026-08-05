@@ -207,6 +207,10 @@
 
 // Match long-form body copy on Projects and CV to the About page.
 .projects-page {
+  .post > .post-header .post-title {
+    font-weight: 700;
+  }
+
   .post-description,
   .demo-intro,
   .demo-list {
@@ -228,6 +232,10 @@
 }
 
 .cv-page {
+  .post > .post-header .post-title {
+    font-weight: 700;
+  }
+
   .post-description,
   .cv {
     font-family: Georgia, "Times New Roman", serif;
