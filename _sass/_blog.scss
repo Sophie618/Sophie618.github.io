@@ -353,7 +353,14 @@ body.blog-page {
     text-decoration: none;
   }
   button { cursor: pointer; }
-  button:hover, button[aria-pressed="true"], a:hover, [aria-current="true"] { color: #fff; background: rgb(95, 82, 220); }
+  button:hover, a:hover {
+    color: rgb(95, 82, 220);
+    background: rgba(96, 92, 104, 0.09);
+  }
+  button[aria-pressed="true"], [aria-current="true"] {
+    color: rgb(95, 82, 220);
+    background: rgba(96, 92, 104, 0.13);
+  }
   .is-disabled { opacity: 0.4; }
 }
 
