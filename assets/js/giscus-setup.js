@@ -19,7 +19,7 @@ function determineGiscusTheme() {
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
     "data-repo": "YifeiWang0618/YifeiWang0618.github.io",
-    "data-repo-id": "",
+    "data-repo-id": "R_kgDOSAkzBg",
     "data-category": "Comments",
     "data-category-id": "",
     "data-mapping": "title",
