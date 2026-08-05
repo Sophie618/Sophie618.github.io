@@ -19,7 +19,10 @@ nav_order: 4
         {% if post.description %}<p class="blog-index-summary">{{ post.description }}</p>{% endif %}
         <p class="blog-index-meta">
           Created on {{ post.date | date: '%B %d, %Y' }}
-          <span data-goatcounter-path="{{ post.url }}">&nbsp; · &nbsp;<span class="goatcounter-count">--</span> views</span>
+          <span data-goatcounter-path="{{ post.url }}"
+            >&nbsp; · &nbsp;<i class="fa-regular fa-eye" aria-hidden="true"></i>
+            <span class="goatcounter-count">--</span> views</span
+          >
         </p>
       </article>
     {% endfor %}

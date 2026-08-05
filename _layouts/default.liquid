@@ -21,7 +21,11 @@
   {% if url_prefix == '/blog/' %}{% assign is_blog_page = true %}{% endif %}
   {% assign is_blog_index = false %}
   {% if page.url == '/blog/' %}{% assign is_blog_index = true %}{% endif %}
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if is_blog_page %} blog-page{% endif %}{% if is_blog_index %} blog-index-page{% endif %}">
+  {% assign is_projects_page = false %}
+  {% if page.url == '/projects/' %}{% assign is_projects_page = true %}{% endif %}
+  {% assign is_cv_page = false %}
+  {% if page.url == '/cv/' %}{% assign is_cv_page = true %}{% endif %}
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if is_blog_page %} blog-page{% endif %}{% if is_blog_index %} blog-index-page{% endif %}{% if is_projects_page %} projects-page{% endif %}{% if is_cv_page %} cv-page{% endif %}">
     <!-- Header -->
     {% include header.liquid %}
     {% if is_blog_page %}{% include blog_tools.liquid %}{% endif %}

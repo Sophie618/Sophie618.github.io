@@ -205,6 +205,46 @@
   }
 }
 
+// Match long-form body copy on Projects and CV to the About page.
+.projects-page {
+  .post-description,
+  .demo-intro,
+  .demo-list {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .demo-list h1,
+  .demo-list h2,
+  .demo-list h3,
+  .demo-list h4,
+  .demo-list h5,
+  .demo-list h6,
+  .demo-index,
+  .tech-row,
+  .project-links,
+  .video-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
+
+.cv-page {
+  .post-description,
+  .cv {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .cv h1,
+  .cv h2,
+  .cv h3,
+  .cv h4,
+  .cv h5,
+  .cv h6,
+  .cv-downloads,
+  .badge {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
+
 [role="main"] a:not(.btn) {
   color: var(--global-link-color) !important;
 
