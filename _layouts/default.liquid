@@ -20,7 +20,7 @@
   {% assign is_blog_page = false %}
   {% if url_prefix == '/blog/' %}{% assign is_blog_page = true %}{% endif %}
   {% assign is_blog_index = false %}
-  {% if page.url == '/blog/' %}{% assign is_blog_index = true %}{% endif %}
+  {% if page.blog_index %}{% assign is_blog_index = true %}{% endif %}
   {% assign is_projects_page = false %}
   {% if page.url == '/projects/' %}{% assign is_projects_page = true %}{% endif %}
   {% assign is_cv_page = false %}

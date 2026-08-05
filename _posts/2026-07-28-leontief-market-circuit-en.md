@@ -14,6 +14,7 @@ tags:
 categories:
   - research-notes
 sophie_post: false
+sophie_translation: true
 toc:
   sidebar: left
 citation: true

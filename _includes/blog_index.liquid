@@ -1,0 +1,28 @@
+{% if page.lang == 'zh-CN' %}
+  {% assign indexed_posts = site.posts | where: 'sophie_post', true %}
+{% else %}
+  {% assign indexed_posts = site.posts | where: 'sophie_translation', true %}
+{% endif %}
+
+{% if indexed_posts.size > 0 %}
+  <div class="blog-index-list" aria-label="Blog posts">
+    {% for post in indexed_posts %}
+      <article class="blog-index-entry">
+        <h2>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        {% if post.description %}
+          <p class="blog-index-summary">{{ post.description }}</p>
+        {% endif %}
+        <p class="blog-index-meta">
+          Created on {{ post.date | date: '%B %d, %Y' }}
+          <span data-goatcounter-path="{{ post.url }}"
+            >&nbsp; · &nbsp;<i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="goatcounter-count">--</span> views</span
+          >
+        </p>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="blog-index-empty">First notes are on the way.</p>
+{% endif %}

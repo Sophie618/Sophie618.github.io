@@ -1,15 +1,13 @@
 ---
 layout: page
-permalink: /blog/
+permalink: /blog/en/
 title: "👋 Welcome to Yifei’Log"
 browser_title: "Yifei'Log｜Yifei Wang"
-nav_title: Blog
 description: Hi, this is Yifei. I’m documenting my learning and research notes in this blog.
-lang: zh-CN
-translation_url: /blog/en/
+lang: en
+translation_url: /blog/
 blog_index: true
-nav: true
-nav_order: 4
+nav: false
 ---
 
 {% include blog_index.liquid %}
