@@ -51,13 +51,7 @@ $$
 U_i(x_i)=\min_{j:A_{ij}>0}\frac{x_{ij}}{A_{ij}}.
 $$
 
-In plain language, to obtain $β_i$ units of utility, she needs
-
-$$
-x_{ij}=\beta_iA_{ij}
-$$
-
-units of every required good. Extra units of just one good do not raise the minimum, so an optimal bundle preserves the prescribed proportions.
+In plain language, to obtain $\beta_i$ units of utility, she needs $x_{ij}=\beta_iA_{ij}$ units of every required good. Extra units of just one good do not raise the minimum, so an optimal bundle preserves the prescribed proportions.
 
 Assuming that more complete bundles are always preferred, the agent spends all her income:
 
@@ -186,11 +180,7 @@ $G_r$ also seals the gadget. At equilibrium, the two agents consume its entire s
 
 Return now to multiplication. Following the simplifying conditions used in the paper's explanation of the gadget, assume first that $p_s=1$ and $p_b>0$.
 
-On the demand side, suppose an agent owns one unit of good $a$, priced at $p_a$. Selling it gives her budget
-
-$$
-1\times p_a=p_a.
-$$
+On the demand side, suppose an agent owns one unit of good $a$, priced at $p_a$. Selling it gives her a budget of $1\times p_a=p_a$.
 
 She spends all of this income on a good whose unit price is $p_b$. Quantity purchased is budget divided by unit price:
 
@@ -204,13 +194,7 @@ Thus $p_a/p_b$ is not a price here, but a quantity the agent can buy.
 
 Now consider the supply side. A natural question is how $p_c$, originally a price, can become a quantity.
 
-Numerically, selling one unit of a good priced at $p_c$ produces a budget of $p_c$. Facing a unit-priced good, this budget purchases
-
-$$
-\frac{p_c}{1}=p_c
-$$
-
-units. This only shows that a price value and a quantity value can coincide; it does not yet create net supply. The paper's **converter** completes the second step through a residual quantity.
+Numerically, selling one unit of a good priced at $p_c$ produces a budget of $p_c$. Facing a unit-priced good, this budget purchases $\frac{p_c}{1}=p_c$ units. This only shows that a price value and a quantity value can coincide; it does not yet create net supply. The paper's **converter** completes the second step through a residual quantity.
 
 Consider a general $\operatorname{Conv}(q)$ involving three goods with prices
 
@@ -220,21 +204,9 @@ $$
 
 where $H$ is a sufficiently large constant ensuring $Hq-p\ge0$. Linear submarkets in the paper enforce these price relations; here we treat them as the converter's interface conditions.
 
-Agent $A_1$ owns $H$ units of $G_2$ and thus has income $Hq$. She requires $G_1,G_3$ in a $1:1$ ratio. One unit of each costs
+Agent $A_1$ owns $H$ units of $G_2$ and thus has income $Hq$. She requires $G_1,G_3$ in a $1:1$ ratio. One unit of each costs $p+(Hq-p)=Hq$, so she buys one unit of each.
 
-$$
-p+(Hq-p)=Hq,
-$$
-
-so she buys one unit of each.
-
-Agent $A_2$ owns one unit of $G_3$ and wants only $G_2$. After selling $G_3$, she buys
-
-$$
-\frac{Hq-p}{q}=H-\frac{p}{q}
-$$
-
-units of $G_2$.
+Agent $A_2$ owns one unit of $G_3$ and wants only $G_2$. After selling $G_3$, she buys $\frac{Hq-p}{q}=H-\frac{p}{q}$ units of $G_2$.
 
 The market initially contains $H$ units of $G_2$. Once $H-p/q$ units are consumed internally, exactly
 
@@ -258,10 +230,10 @@ $$
 
 Temporarily fold away the gadget's internal wiring and look only at the two quantities exposed to the clearing condition:
 
-| Side | Origin of quantity | Quantity |
-|---|---|---:|
-| Demand | Use a budget of $p_a$ to buy a good priced at $p_b$ | $p_a/p_b$ |
-| Supply | Convert price $p_c$ into a quantity of a unit-priced good | $p_c$ |
+| Side   | Origin of quantity                                        |  Quantity |
+| ------ | --------------------------------------------------------- | --------: |
+| Demand | Use a budget of $p_a$ to buy a good priced at $p_b$       | $p_a/p_b$ |
+| Supply | Convert price $p_c$ into a quantity of a unit-priced good |     $p_c$ |
 
 The full gadget uses a combiner and a splitter to connect both flows to the same “flow slot.” They do not simply pretend that two different goods are identical; value-preserving internal goods transmit the same quantity one stage at a time.
 
@@ -278,6 +250,7 @@ Multiplying by $p_b$ gives $p_a=p_bp_c$.
 For example, if $p_a=6,p_b=2,p_c=3$, the demand side wants $6/2=3$ units and the other side supplies $3$, so the market can clear. If $p_c=4$, one side supplies four units while the other accepts only three. One unit remains, so these cannot be equilibrium prices; prices must adjust until $p_a/p_b=p_c$.
 
 **The paper builds three components from Leontief agents and linear-relation submarkets:**
+
 > - A converter consumes one unit of a good priced at $p$ and leaves $p/q$ units of a good priced at $q$.
 > - A combiner receives $\ell$ units each of two goods priced at $p_a,p_b$ and leaves $\ell$ units of a good priced at $p_a+p_b$.
 > - A splitter performs the reverse value-preserving operation.
@@ -288,21 +261,9 @@ For example, if $p_a=6,p_b=2,p_c=3$, the demand side wants $6/2=3$ units and the
 
 The complete gadget uses two converters, one combiner, one splitter, two additional agents, and several private goods. The table in the paper looks complicated, but the movement of quantities is straightforward.
 
-The first converter, $\operatorname{Conv}(1)$, consumes one unit of a good priced at $p_c$ and leaves
+The first converter, $\operatorname{Conv}(1)$, consumes one unit of a good priced at $p_c$ and leaves $p_c$ units of a unit-priced good. Price has become an actual quantity.
 
-$$
-p_c
-$$
-
-units of a unit-priced good. Price has become an actual quantity.
-
-The second converter consumes one unit of a good priced at $p_a$ and leaves
-
-$$
-\frac{p_a}{p_b}
-$$
-
-units of a good priced at $p_b$.
+The second converter consumes one unit of a good priced at $p_a$ and leaves $p_a/p_b$ units of a good priced at $p_b$.
 
 The combiner must merge the two flows at the same rate. Their rates are $p_c$ and $p_a/p_b$. Both can clear simultaneously only if
 
@@ -436,5 +397,5 @@ This is only an aid to intuition. Formal completeness results still depend on th
 
 ## References
 
-1. Jugal Garg, Ruta Mehta, Vijay V. Vazirani, and Sadra Yazdanbod. [*Settling the Complexity of Leontief and PLC Exchange Markets under Exact and Approximate Equilibria*](https://doi.org/10.1145/3055399.3055474). STOC 2017, pp. 890–901.
-2. Sadra Yazdanbod. [*Combinatorial and Exchange Markets*](https://aco.gatech.edu/sites/default/files/images/yazdanbod-thesis.pdf). PhD thesis, Georgia Institute of Technology, 2017. Chapter 3.
+1. Jugal Garg, Ruta Mehta, Vijay V. Vazirani, and Sadra Yazdanbod. [_Settling the Complexity of Leontief and PLC Exchange Markets under Exact and Approximate Equilibria_](https://doi.org/10.1145/3055399.3055474). STOC 2017, pp. 890–901.
+2. Sadra Yazdanbod. [_Combinatorial and Exchange Markets_](https://aco.gatech.edu/sites/default/files/images/yazdanbod-thesis.pdf). PhD thesis, Georgia Institute of Technology, 2017. Chapter 3.

@@ -26,7 +26,6 @@ $$
 p_a=p_bp_c
 $$
 
-
 乍看之下，市场里只有人、商品、预算和交易，并没有乘法器。每个人自行决定买什么，所有商品恰好卖完时，价格才达到均衡。然而，Garg、Mehta、Vazirani 和 Yazdanbod 证明，只要设计得当，一个交换市场确实可以强制实现上面的乘法关系。
 
 市场中的代理人有一种很简单的偏好：商品必须按固定比例搭配。即一单位某种商品必须配两单位另一种商品，单独多买其中一种没有用。经济学中称之为 Leontief 效用。
@@ -51,13 +50,7 @@ $$
 U_i(x_i)=\min_{j:A_{ij}>0}\frac{x_{ij}}{A_{ij}}.
 $$
 
-把公式翻译成直白的话：如果代理人想获得 $\beta_i$ 单位效用，她需要
-
-$$
-x_{ij}=\beta_iA_{ij}
-$$
-
-单位的每种必需商品。单独多买某一种商品不会提高最小值，所以最优商品束会保持规定比例。
+把公式翻译成直白的话：如果代理人想获得 $\beta_i$ 单位效用，她需要 $x_{ij}=\beta_iA_{ij}$ 单位的每种必需商品。单独多买某一种商品不会提高最小值，所以最优商品束会保持规定比例。
 
 假设完整商品束越多越好，代理人就会花完所有收入：
 
@@ -188,11 +181,7 @@ $G_r$ 同时封住了这个 gadget。均衡时，两位代理人会消耗完它�
 
 现在回到乘法。按照论文解释 gadget 时采用的简化条件，先假设 $p_s=1$ 且 $p_b>0$。
 
-先看需求一侧。假设一位代理人拥有一单位商品 $a$，它的单价是 $p_a$。卖掉这单位商品后，她的预算是
-
-$$
-1\times p_a=p_a.
-$$
+先看需求一侧。假设一位代理人拥有一单位商品 $a$，它的单价是 $p_a$。卖掉这单位商品后，她的预算是 $1\times p_a=p_a$。
 
 她把收入全部用于购买单价为 $p_b$ 的商品。购买数量等于总预算除以单位价格，因此
 
@@ -208,13 +197,7 @@ $$
 
 再看供给一侧。这里很容易卡住：$p_c$ 原本也是价格，怎么会变成数量？
 
-先从数值上看。卖掉一单位价格为 $p_c$ 的商品，会得到 $p_c$ 的预算；面对单价为 $1$ 的商品，这笔预算对应
-
-$$
-\frac{p_c}{1}=p_c
-$$
-
-单位。这里只说明了“价格值”和“数量值”可以相等，还没有制造出净供给。论文中的 converter 用剩余量完成后半步。
+先从数值上看。卖掉一单位价格为 $p_c$ 的商品，会得到 $p_c$ 的预算；面对单价为 $1$ 的商品，这笔预算对应 $\frac{p_c}{1}=p_c$ 单位。这里只说明了“价格值”和“数量值”可以相等，还没有制造出净供给。论文中的 converter 用剩余量完成后半步。
 
 先看一般的 $\operatorname{Conv}(q)$。它涉及三种商品，价格分别是
 
@@ -226,21 +209,9 @@ $$
 
 这些价格关系由论文的线性子市场强制实现。这里先把它们当成 converter 的接口条件。
 
-代理人 $A_1$ 拥有 $H$ 单位商品 $G_2$，收入为 $Hq$。她按 $1:1$ 的比例需要 $G_1,G_3$。一单位二者的总价格刚好是
+代理人 $A_1$ 拥有 $H$ 单位商品 $G_2$，收入为 $Hq$。她按 $1:1$ 的比例需要 $G_1,G_3$。一单位二者的总价格刚好是 $p+(Hq-p)=Hq$，所以她会各买一单位。
 
-$$
-p+(Hq-p)=Hq,
-$$
-
-所以她会各买一单位。
-
-代理人 $A_2$ 拥有一单位 $G_3$，只想购买 $G_2$。卖掉 $G_3$ 后，她会买
-
-$$
-\frac{Hq-p}{q}=H-\frac{p}{q}
-$$
-
-单位 $G_2$。
+代理人 $A_2$ 拥有一单位 $G_3$，只想购买 $G_2$。卖掉 $G_3$ 后，她会买 $\frac{Hq-p}{q}=H-\frac{p}{q}$ 单位 $G_2$。
 
 市场最初有 $H$ 单位 $G_2$。内部消费掉 $H-p/q$ 单位后，恰好剩下
 
@@ -268,10 +239,10 @@ $$
 
 现在暂时把 gadget 内部的布线折叠起来，只看它向清算条件暴露的两个数量：
 
-| 一侧 | 数量从哪里来 | 数量 |
-|---|---|---:|
-| 需求侧 | 用 $p_a$ 的预算购买单价为 $p_b$ 的商品 | $p_a/p_b$ |
-| 供给侧 | 把价格 $p_c$ 转换成单价为 $1$ 的商品数量 | $p_c$ |
+| 一侧   | 数量从哪里来                             |      数量 |
+| ------ | ---------------------------------------- | --------: |
+| 需求侧 | 用 $p_a$ 的预算购买单价为 $p_b$ 的商品   | $p_a/p_b$ |
+| 供给侧 | 把价格 $p_c$ 转换成单价为 $1$ 的商品数量 |     $p_c$ |
 
 完整 gadget 会用 combiner 和 splitter 把两股商品流接到同一个“流量槽位”。它们不是凭空把两种不同商品视为相同，而是通过价值守恒的内部商品逐段传递同一个数量。
 
@@ -283,21 +254,17 @@ $$
 \underbrace{p_c}_{\text{由 converter 产生的数量}}.
 $$
 
-两边乘以 $p_b$，得到
-
-$$
-p_a=p_bp_c.
-$$
+两边乘以 $p_b$，得到 $p_a=p_bp_c$。
 
 代入一组数字会更直观。若 $p_a=6,p_b=2,p_c=3$，需求侧想买 $6/2=3$ 单位，另一侧也提供 $3$ 单位，市场可以清算。
 
 如果 $p_c=4$，一侧有 $4$ 单位，另一侧只接收 $3$ 单位，会留下一单位商品。这组价格不是均衡价格，必须调整到 $p_a/p_b=p_c$。
 
 **论文用 Leontief 代理人和线性关系子市场搭出三种组件：**
+
 > - Converter 消耗一单位价格为 $p$ 的商品，留下 $p/q$ 单位价格为 $q$ 的商品。
 > - Combiner 接收两种各 $\ell$ 单位、价格分别为 $p_a,p_b$ 的商品，留下 $\ell$ 单位价格为 $p_a+p_b$ 的商品。
 > - Splitter 执行相反的价值守恒操作。
-
 
 这里的“输入”和“输出”只是记账语言。这些组件本质仍然是交换市场，并没有凭空生产价值。每个组件的净禀赋价值都等于净消费价值。
 
@@ -305,13 +272,7 @@ $$
 
 完整 gadget 使用两个 converter、一个 combiner、一个 splitter、两位额外代理人和若干专属商品。论文中的表格看起来很复杂，但数量的流动并不难理解。
 
-第一个 converter，$\operatorname{Conv}(1)$，消耗一单位价格为 $p_c$ 的商品，留下
-
-$$
-p_c
-$$
-
-单位价格为 $1$ 的商品。价格在这里变成了实际数量。
+第一个 converter，$\operatorname{Conv}(1)$，消耗一单位价格为 $p_c$ 的商品，留下 $p_c$ 单位价格为 $1$ 的商品。价格在这里变成了实际数量。
 
 第二个 converter 消耗一单位价格为 $p_a$ 的商品，留下 $p_a/p_b$ 单位价格为 $p_b$ 的商品。
 
@@ -375,7 +336,6 @@ $$
 计算三人博弈的精确 Nash equilibrium 是 FIXP-complete 的。既然对应的多项式系统可以被编译成 Leontief 市场，计算该市场的精确均衡就是 FIXP-hard 的。
 
 这里的构造或许是比复杂性标签更值得细看的微妙设计。固定比例消费、预算平衡和市场清算组成了一门很小的“语言”，但它已经足以书写任意多项式方程。
-
 
 ---
 
@@ -449,5 +409,5 @@ $$
 
 ## 参考文献
 
-1. Jugal Garg, Ruta Mehta, Vijay V. Vazirani, and Sadra Yazdanbod. [*Settling the Complexity of Leontief and PLC Exchange Markets under Exact and Approximate Equilibria*](https://doi.org/10.1145/3055399.3055474). STOC 2017, pp. 890–901.
-2. Sadra Yazdanbod. [*Combinatorial and Exchange Markets*](https://aco.gatech.edu/sites/default/files/images/yazdanbod-thesis.pdf). PhD thesis, Georgia Institute of Technology, 2017. Chapter 3.
+1. Jugal Garg, Ruta Mehta, Vijay V. Vazirani, and Sadra Yazdanbod. [_Settling the Complexity of Leontief and PLC Exchange Markets under Exact and Approximate Equilibria_](https://doi.org/10.1145/3055399.3055474). STOC 2017, pp. 890–901.
+2. Sadra Yazdanbod. [_Combinatorial and Exchange Markets_](https://aco.gatech.edu/sites/default/files/images/yazdanbod-thesis.pdf). PhD thesis, Georgia Institute of Technology, 2017. Chapter 3.

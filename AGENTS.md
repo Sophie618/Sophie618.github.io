@@ -8,6 +8,7 @@ A simple, clean, and responsive Jekyll theme for academics.
 - Preserve all claims, qualifications, section structure, equations, tables, citations, links, and references. Do not summarize, omit, or add arguments during translation.
 - Give each language version its own stable URL and set reciprocal `translation_url` frontmatter links. Use `lang: zh-CN` for Chinese and `lang: en` for English.
 - Include only the primary-language version in the Blog archive (`sophie_post: true`); set its translated counterpart to `sophie_post: false` to avoid duplicate entries.
+- Before publishing, inspect every display-math block in both languages. Short formulas that function grammatically as part of a sentence (for example, between “needs” and “units”) should use inline math. Keep multi-line derivations, emphasized constraints, boxed conclusions, arrays, and other structurally important equations in display mode. Apply each decision consistently to both language versions.
 - Build and inspect both rendered pages before publishing.
 
 ## Quick Links by Role
