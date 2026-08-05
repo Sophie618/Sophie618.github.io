@@ -93,6 +93,7 @@ blog_name: Notes & Essays
 blog_description: Notes on agent memory, recursive self-improvement, learning, and growth.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
+goatcounter_endpoint: https://yifeiwang0618.goatcounter.com/count
 
 # Pagination
 pagination:

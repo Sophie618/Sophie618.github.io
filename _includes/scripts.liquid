@@ -376,3 +376,13 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+{% assign scripts_url_prefix = page.url | slice: 0, 6 %}
+{% if scripts_url_prefix == '/blog/' %}
+  <script defer src="{{ '/assets/js/blog-tools.js' | relative_url | bust_file_cache }}"></script>
+  {% if site.goatcounter_endpoint %}
+    <script>window.goatcounterEndpoint = '{{ site.goatcounter_endpoint }}';</script>
+    <script async data-goatcounter="{{ site.goatcounter_endpoint }}" src="https://gc.zgo.at/count.js"></script>
+    <script defer src="{{ '/assets/js/goatcounter-views.js' | relative_url | bust_file_cache }}"></script>
+  {% endif %}
+{% endif %}

@@ -4,16 +4,9 @@
 
 <h2 id="citation">Citation</h2>
 
-If you would like to cite this article, please use:
+<p>If you need to cite this article, please refer to:</p>
 
 {% assign citation_author = page.author | default: site.last_name %}
-
-{% capture citation_quote -%}
-> {{ citation_author }} ({{ page.date | date: "%b %Y" }}). {{ page.title }}. {% if site.title != 'blank' %}{{ site.title }}. {% endif %}{{ site.url }}{{ page.url }}.
-{%- endcapture %}
-{{ citation_quote | markdownify }}
-
-<p>Or copy the BibTeX entry:</p>
 
 {% capture citation_code -%}
 ```bibtex
