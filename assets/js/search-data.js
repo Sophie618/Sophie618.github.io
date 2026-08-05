@@ -23,9 +23,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-blog",
-          title: "Blog",
-          description: "Notes on agent memory, recursive self-improvement, learning, and growth.",
+        },{id: "nav-welcome-to-yifei-log",
+          title: "👋 Welcome to Yifei’Log",
+          description: "Hi, this is Yifei. I’m documenting my learning and research notes in this blog.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
