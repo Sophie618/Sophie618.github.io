@@ -5,7 +5,7 @@ author: Yifei Wang
 lang: en
 translation_url: /blog/2026/leontief-market-circuit/
 permalink: /blog/2026/leontief-market-circuit/en/
-date: 2026-08-01
+date: 2026-07-28
 description: "How fixed-proportion preferences turn a Leontief exchange market into an arithmetic circuit."
 tags:
   - algorithmic-game-theory

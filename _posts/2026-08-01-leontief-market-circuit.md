@@ -4,7 +4,7 @@ title: "市场怎么会做乘法？"
 author: Yifei Wang
 lang: zh-CN
 translation_url: /blog/2026/leontief-market-circuit/en/
-date: 2026-08-01
+date: 2026-07-28
 description: "固定比例偏好如何把 Leontief 交换市场变成算术电路。"
 tags:
   - algorithmic-game-theory

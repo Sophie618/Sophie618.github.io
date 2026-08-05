@@ -6,8 +6,8 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #eee9f2;
-  --global-code-bg-color: #e5ddea;
+  --global-bg-color: #f8f5fb;
+  --global-code-bg-color: #eee9f2;
   --global-text-color: #2f2a32;
   --global-text-color-light: #665b6b;
   --global-theme-color: #5f52dc;
@@ -15,12 +15,12 @@
   --global-link-color: #5f52dc;
   --global-link-hover-color: #5f52dc;
   --global-hover-text-color: #faf7fb;
-  --global-footer-bg-color: #ded5e4;
+  --global-footer-bg-color: #eee9f2;
   --global-footer-text-color: #5e5363;
   --global-footer-link-color: #503e59;
   --global-distill-app-color: #{v.$grey-color};
   --global-divider-color: rgba(83, 60, 94, 0.18);
-  --global-card-bg-color: #f8f5fa;
+  --global-card-bg-color: #fdfcfe;
   --global-highlight-color: #{v.$red-color-dark};
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$black-color, "red", v.$space: rgb)},
@@ -29,7 +29,7 @@
     0.4
   );
   --global-back-to-top-text-color: #{v.$white-color};
-  --global-newsletter-bg-color: #f8f5fa;
+  --global-newsletter-bg-color: #fdfcfe;
   --global-newsletter-text-color: #2f2a32;
 
   --global-tip-block: #42b983;
