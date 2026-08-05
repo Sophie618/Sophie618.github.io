@@ -19,7 +19,9 @@
   {% assign url_prefix = page.url | slice: 0, 6 %}
   {% assign is_blog_page = false %}
   {% if url_prefix == '/blog/' %}{% assign is_blog_page = true %}{% endif %}
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if is_blog_page %} blog-page{% endif %}">
+  {% assign is_blog_index = false %}
+  {% if page.url == '/blog/' %}{% assign is_blog_index = true %}{% endif %}
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if is_blog_page %} blog-page{% endif %}{% if is_blog_index %} blog-index-page{% endif %}">
     <!-- Header -->
     {% include header.liquid %}
     {% if is_blog_page %}{% include blog_tools.liquid %}{% endif %}
