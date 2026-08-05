@@ -2,20 +2,24 @@
 <hr>
 <br>
 
-If you found this useful, please cite this as:
+<h2 id="citation">Citation</h2>
+
+If you would like to cite this article, please use:
+
+{% assign citation_author = page.author | default: site.last_name %}
 
 {% capture citation_quote -%}
-> {{ site.last_name }}, {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} ({{ page.date | date: "%b %Y" }}). {{ page.title }}. {% if site.title != 'blank' %}{{ site.title }}. {% endif %}{{ site.url }}.
+> {{ citation_author }} ({{ page.date | date: "%b %Y" }}). {{ page.title }}. {% if site.title != 'blank' %}{{ site.title }}. {% endif %}{{ site.url }}{{ page.url }}.
 {%- endcapture %}
 {{ citation_quote | markdownify }}
 
-<p>or as a BibTeX entry:</p>
+<p>Or copy the BibTeX entry:</p>
 
 {% capture citation_code -%}
 ```bibtex
-@article{ {{- site.last_name | downcase }}{{ page.date | date: "%Y" }}{{ page.title | slugify }},
+@article{ {{- page.citation_key | default: page.slug | prepend: "wang2026" -}},
   title   = { {{- page.title -}} },
-  author  = { {{- site.last_name }}, {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif -%}},
+  author  = { {{- citation_author -}} },
   {%- if site.title != 'blank' %}journal = { {{- site.title -}} },{% endif %}
   year    = { {{- page.date | date: "%Y" -}} },
   month   = { {{- page.date | date: "%b" -}} },

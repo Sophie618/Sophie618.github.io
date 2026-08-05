@@ -165,3 +165,146 @@
     }
   }
 }
+
+// Reading layout for Chinese long-form posts.
+html[lang^="zh"] .post {
+  --post-serif: Lora, Georgia, "Songti SC", STSong, SimSun, serif;
+  --post-sans: Poppins, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
+  font-family: var(--post-serif);
+  font-size: 1rem;
+  line-height: 1.78;
+
+  .post-title,
+  #markdown-content h1,
+  #markdown-content h2,
+  #markdown-content h3,
+  #markdown-content h4,
+  #markdown-content h5,
+  #markdown-content h6 {
+    font-family: var(--post-sans);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+
+  .post-title {
+    margin-bottom: 0.75rem;
+    font-size: 2.125rem;
+    font-weight: 700;
+  }
+
+  #markdown-content p,
+  #markdown-content li {
+    font-family: var(--post-serif);
+  }
+
+  #markdown-content p {
+    max-width: 72ch;
+    margin-bottom: 1.25em;
+  }
+
+  #markdown-content h2 {
+    margin-top: 1.8em;
+    font-size: 1.75rem;
+  }
+
+  #markdown-content h3 {
+    margin-top: 1.55em;
+    font-size: 1.375rem;
+  }
+
+  #markdown-content blockquote {
+    padding: 0.75em 1.25em;
+    border-left-width: 3px;
+    font-family: var(--post-serif);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}
+
+#toc-sidebar {
+  max-height: calc(100vh - 7rem);
+  overflow-y: auto;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  scrollbar-gutter: stable;
+
+  &.sticky-top {
+    top: 5.75rem;
+    padding: 1rem 0;
+  }
+}
+
+nav[data-toggle="toc"] {
+  .nav > li > a {
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+    font-weight: 500;
+  }
+
+  .nav > li > a:hover,
+  .nav-link.active {
+    color: var(--global-theme-color);
+    border-left-color: var(--global-theme-color);
+  }
+}
+
+mjx-container[data-tex] {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+  }
+}
+
+.math-copy-toast {
+  position: absolute;
+  z-index: 9999;
+  padding: 6px 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.82);
+  border-radius: 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -100%);
+  transition: opacity 0.15s ease;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.comments-pending {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.4rem;
+  background: color-mix(in srgb, var(--global-theme-color) 6%, var(--global-bg-color));
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.6rem;
+
+  h2 {
+    margin: 0 0 0.35rem;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #toc-sidebar {
+    display: none;
+  }
+
+  html[lang^="zh"] .post .post-title {
+    font-size: 1.8rem;
+  }
+}

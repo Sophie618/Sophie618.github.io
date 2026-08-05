@@ -23,6 +23,11 @@ $(document).ready(function () {
     $(".publications h2").each(function () {
       $(this).attr("data-toc-skip", "");
     });
+    // CSS selectors cannot reliably target ids beginning with a digit.
+    // Prefix numbered Markdown headings before bootstrap-toc reads them.
+    $("h1, h2, h3, h4, h5, h6").each(function () {
+      if (this.id && /^\d/.test(this.id)) this.id = `sec-${this.id}`;
+    });
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
@@ -30,6 +35,11 @@ $(document).ready(function () {
       target: navSelector,
       offset: 100,
     });
+    if (typeof MathJax !== "undefined" && MathJax.startup) {
+      MathJax.startup.promise.then(function () {
+        $("body").scrollspy("refresh");
+      });
+    }
   }
 
   // add css to jupyter notebooks
