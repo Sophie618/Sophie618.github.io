@@ -41,6 +41,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/leontief-market-circuit/";
           
         },
+      },{id: "post-how-can-a-market-perform-multiplication",
+        
+          title: "How Can a Market Perform Multiplication?",
+        
+        description: "How fixed-proportion preferences turn a Leontief exchange market into an arithmetic circuit.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/leontief-market-circuit/en/";
+          
+        },
       },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
