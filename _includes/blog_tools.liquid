@@ -1,15 +1,27 @@
 <aside class="blog-tools notranslate" aria-label="Blog reading tools">
   <div class="blog-palette" aria-label="Reading background">
-    <button type="button" data-reading-theme="paper" aria-pressed="false" title="Paper background"><i class="fa-regular fa-file-lines"></i><span>Paper</span></button>
-    <button type="button" data-reading-theme="sage" aria-pressed="false" title="Eye-comfort background"><i class="fa-regular fa-eye"></i><span>Comfort</span></button>
+    <button type="button" data-reading-theme="paper" aria-pressed="false" aria-label="Paper background" title="Paper background">
+      <i class="fa-regular fa-file-lines"></i>
+    </button>
+    <button type="button" data-reading-theme="sage" aria-pressed="false" aria-label="Eye-comfort background" title="Eye-comfort background">
+      <i class="fa-regular fa-eye"></i>
+    </button>
   </div>
   <span class="blog-tools-divider" aria-hidden="true"></span>
   <div class="blog-language" aria-label="Article language">
     {% if page.lang == 'zh-CN' %}
       <span aria-current="true">中</span>
-      {% if page.translation_url %}<a href="{{ page.translation_url | relative_url }}" hreflang="en">EN</a>{% else %}<span class="is-disabled" title="English version in preparation">EN</span>{% endif %}
+      {% if page.translation_url -%}
+        <a href="{{ page.translation_url | relative_url }}" hreflang="en">EN</a>
+      {%- else -%}
+        <span class="is-disabled" title="English version in preparation">EN</span>
+      {%- endif %}
     {% else %}
-      {% if page.translation_url %}<a href="{{ page.translation_url | relative_url }}" hreflang="zh-CN">中</a>{% else %}<span class="is-disabled" title="Chinese version in preparation">中</span>{% endif %}
+      {% if page.translation_url -%}
+        <a href="{{ page.translation_url | relative_url }}" hreflang="zh-CN">中</a>
+      {%- else -%}
+        <span class="is-disabled" title="Chinese version in preparation">中</span>
+      {%- endif %}
       <span aria-current="true">EN</span>
     {% endif %}
   </div>
