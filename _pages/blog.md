@@ -2,6 +2,7 @@
 layout: page
 permalink: /blog/
 title: "👋 Welcome to Yifei’Log"
+browser_title: "Yifei'Log｜Yifei Wang"
 nav_title: Blog
 description: Hi, this is Yifei. I’m documenting my learning and research notes in this blog.
 nav: true
