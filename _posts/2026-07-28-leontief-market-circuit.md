@@ -5,6 +5,8 @@ author: Yifei Wang
 lang: zh-CN
 translation_url: /blog/2026/leontief-market-circuit/en/
 view_count_path: /blog/2026/leontief-market-circuit/
+view_count_legacy_paths:
+  - /blog/2026/leontief-market-circuit/en/
 date: 2026-07-28
 description: "固定比例偏好如何把 Leontief 交换市场变成算术电路。"
 tags:

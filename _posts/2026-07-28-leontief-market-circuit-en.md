@@ -6,6 +6,8 @@ lang: en
 translation_url: /blog/2026/leontief-market-circuit/
 permalink: /blog/2026/leontief-market-circuit/en/
 view_count_path: /blog/2026/leontief-market-circuit/
+view_count_legacy_paths:
+  - /blog/2026/leontief-market-circuit/en/
 date: 2026-07-28
 description: "How fixed-proportion preferences turn a Leontief exchange market into an arithmetic circuit."
 tags:

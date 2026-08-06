@@ -17,7 +17,11 @@
         {% endif %}
         <p class="blog-index-meta">
           Created on {{ post.date | date: '%B %d, %Y' }}
-          <span data-goatcounter-path="{{ view_count_path }}"
+          <span
+            data-goatcounter-path="{{ view_count_path }}"
+            {% if post.view_count_legacy_paths %}
+              data-goatcounter-legacy-paths="{{ post.view_count_legacy_paths | join: '|' }}"
+            {% endif %}
             >&nbsp; · &nbsp;<i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="goatcounter-count">--</span> views</span
           >
         </p>

@@ -19,7 +19,12 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       Created on {{ page.date | date: '%B %d, %Y' }}
-      <span class="post-views" data-goatcounter-path="{{ view_count_path }}"
+      <span
+        class="post-views"
+        data-goatcounter-path="{{ view_count_path }}"
+        {% if page.view_count_legacy_paths %}
+          data-goatcounter-legacy-paths="{{ page.view_count_legacy_paths | join: '|' }}"
+        {% endif %}
         >&nbsp; · &nbsp;<i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="goatcounter-count">--</span> views</span
       >
     </p>
