@@ -381,7 +381,11 @@
 {% if scripts_url_prefix == '/blog/' %}
   <script defer src="{{ '/assets/js/blog-tools.js' | relative_url | bust_file_cache }}"></script>
   {% if site.goatcounter_endpoint %}
-    <script>window.goatcounterEndpoint = '{{ site.goatcounter_endpoint }}';</script>
+    {% assign view_count_path = page.view_count_path | default: page.url %}
+    <script>
+      window.goatcounterEndpoint = '{{ site.goatcounter_endpoint }}';
+      window.goatcounter = { path: '{{ view_count_path }}' };
+    </script>
     <script async data-goatcounter="{{ site.goatcounter_endpoint }}" src="https://gc.zgo.at/count.js"></script>
     <script defer src="{{ '/assets/js/goatcounter-views.js' | relative_url | bust_file_cache }}"></script>
   {% endif %}
