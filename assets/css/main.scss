@@ -38,3 +38,6 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+// Keep the custom cursor last so component-level cursor rules do not override it.
+@use "cursor";
