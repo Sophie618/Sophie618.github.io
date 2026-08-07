@@ -367,6 +367,20 @@
     color: var(--global-theme-color);
   }
 
+  .latest-post-link {
+    display: inline-flex;
+    gap: 0.5em;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .latest-post-icon {
+    width: 1.5em;
+    height: 1.5em;
+    flex: 0 0 1.5em;
+    object-fit: contain;
+  }
+
   small {
     padding: 0.16rem 0.45rem;
     background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-card-bg-color));

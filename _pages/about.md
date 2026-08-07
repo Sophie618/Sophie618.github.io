@@ -129,7 +129,12 @@ latest_posts:
     {% for post in sophie_posts limit: 3 %}
     <div>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a class="latest-post-link" href="{{ post.url | relative_url }}">
+        {% if post.illustration %}
+          <img class="latest-post-icon" src="{{ post.illustration | relative_url }}" alt="" aria-hidden="true">
+        {% endif %}
+        <span>{{ post.title }}</span>
+      </a>
       <small>Read post</small>
     </div>
     {% endfor %}
