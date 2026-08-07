@@ -368,17 +368,20 @@
   }
 
   .latest-post-link {
-    display: inline-flex;
-    gap: 0.5em;
-    align-items: center;
+    position: relative;
+    display: inline-block;
     width: fit-content;
+    padding-left: 2.5em;
   }
 
   .latest-post-icon {
-    width: 1.5em;
-    height: 1.5em;
-    flex: 0 0 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2em;
+    height: 2em;
     object-fit: contain;
+    transform: translateY(-50%);
   }
 
   small {
