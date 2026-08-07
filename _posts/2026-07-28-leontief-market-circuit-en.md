@@ -10,8 +10,8 @@ view_count_legacy_paths:
   - /blog/2026/leontief-market-circuit/en/
 date: 2026-07-28
 description: "How fixed-proportion preferences turn a Leontief exchange market into an arithmetic circuit."
-illustration: /assets/img/blog/leontief-market-circuit.svg
-illustration_alt: "A vintage brass market-equilibrium balance with two level pans"
+illustration: /assets/img/blog/leontief-market-circuit.png
+illustration_alt: "A vintage watercolor breadboard circuit with red and blue wires, a black chip, and two red LEDs"
 tags:
   - algorithmic-game-theory
   - market-equilibrium

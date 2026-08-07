@@ -9,8 +9,8 @@ view_count_legacy_paths:
   - /blog/2026/leontief-market-circuit/en/
 date: 2026-07-28
 description: "固定比例偏好如何把 Leontief 交换市场变成算术电路。"
-illustration: /assets/img/blog/leontief-market-circuit.svg
-illustration_alt: "一架两端保持水平的复古黄铜市场均衡天平"
+illustration: /assets/img/blog/leontief-market-circuit.png
+illustration_alt: "由红蓝跳线、黑色芯片与两颗红色 LED 组成的复古水彩面包板电路"
 tags:
   - algorithmic-game-theory
   - market-equilibrium
