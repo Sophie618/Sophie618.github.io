@@ -50,10 +50,7 @@ layout: default
         {% endif %}
         >&nbsp; · &nbsp;<i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="unified-goatcounter-count">--</span> views</span
       >
-      &nbsp; · &nbsp;<span class="post-reading-time"
-        ><i class="fa-regular fa-clock" aria-hidden="true"></i>
-        {% if page.lang == 'zh-CN' %}{{ reading_minutes }} min{% else %}{{ reading_minutes }} min read{% endif -%}
-      </span>
+      &nbsp; · &nbsp;<span class="post-reading-time"><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ reading_minutes }} min </span>
     </p>
     <p class="post-tags">
       {% if url_beginning == '/blog/' %}
