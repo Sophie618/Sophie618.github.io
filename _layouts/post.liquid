@@ -6,6 +6,16 @@ layout: default
 {% assign categories = page.categories | join: '' %}
 {% assign url_beginning = page.url | slice: 0, 6 %}
 {% assign view_count_path = page.view_count_path | default: page.url %}
+{% if page.lang == 'zh-CN' %}
+  {% assign reading_words = content | number_of_words: 'cjk' %}
+  {% assign reading_minutes = reading_words | divided_by: 400.0 | ceil %}
+{% else %}
+  {% assign reading_words = content | number_of_words %}
+  {% assign reading_minutes = reading_words | divided_by: 220.0 | ceil %}
+{% endif %}
+{% if reading_minutes < 1 %}
+  {% assign reading_minutes = 1 %}
+{% endif %}
 
 {% if page._styles %}
   <!-- Page/Post style -->
@@ -16,6 +26,19 @@ layout: default
 
 <div class="post">
   <header class="post-header">
+    {% if page.illustration %}
+      <div class="post-illustration">
+        {%
+          include figure.liquid
+          loading="eager"
+          path=page.illustration
+          sizes="(max-width: 575px) 112px, 132px"
+          width="132"
+          height="132"
+          alt=page.illustration_alt
+        %}
+      </div>
+    {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       Created on {{ page.date | date: '%B %d, %Y' }}
@@ -27,6 +50,10 @@ layout: default
         {% endif %}
         >&nbsp; · &nbsp;<i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="unified-goatcounter-count">--</span> views</span
       >
+      &nbsp; · &nbsp;<span class="post-reading-time"
+        ><i class="fa-regular fa-clock" aria-hidden="true"></i>
+        {% if page.lang == 'zh-CN' %}预计 {{ reading_minutes }} 分钟{% else %}{{ reading_minutes }} min read{% endif -%}
+      </span>
     </p>
     <p class="post-tags">
       {% if url_beginning == '/blog/' %}
