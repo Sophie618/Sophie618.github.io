@@ -32,7 +32,7 @@ latest_posts:
     <a class="affiliation-link" href="https://www.bit.edu.cn/">
       <img
         class="affiliation-icon affiliation-icon--seal"
-        src="https://www.bit.edu.cn/images/gb20190805/logo_01.svg"
+        src="{{ '/assets/img/sophie/bit-seal.svg' | relative_url }}"
         alt=""
         aria-hidden="true"
       >Beijing Institute of Technology</a
