@@ -7,7 +7,7 @@ nav_order: 1
 
 profile:
   align: right
-  image: sophie/profile-distilled.png
+  image: sophie/profile.jpg
   image_circular: true
   social_icons: true
   more_info: >
