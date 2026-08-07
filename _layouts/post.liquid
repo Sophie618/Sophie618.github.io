@@ -52,7 +52,7 @@ layout: default
       >
       &nbsp; · &nbsp;<span class="post-reading-time"
         ><i class="fa-regular fa-clock" aria-hidden="true"></i>
-        {% if page.lang == 'zh-CN' %}预计 {{ reading_minutes }} 分钟{% else %}{{ reading_minutes }} min read{% endif -%}
+        {% if page.lang == 'zh-CN' %}{{ reading_minutes }} min{% else %}{{ reading_minutes }} min read{% endif -%}
       </span>
     </p>
     <p class="post-tags">
