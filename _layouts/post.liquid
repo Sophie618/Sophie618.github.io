@@ -32,16 +32,16 @@ layout: default
           include figure.liquid
           loading="eager"
           path=page.illustration
-          sizes="(max-width: 575px) 108px, 120px"
-          width="120"
-          height="120"
+          sizes="240px"
+          width="240"
+          height="240"
           alt=page.illustration_alt
         %}
       </div>
     {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-      Created on {{ page.date | date: '%B %d, %Y' }}
+      {{ page.date | date: '%B %d, %Y' }}
       <span
         class="post-views"
         data-goatcounter-path="{{ view_count_path }}"
