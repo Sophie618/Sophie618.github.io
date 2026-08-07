@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-goatcounter-path]").forEach(async (counter) => {
-    const output = counter.querySelector(".goatcounter-count");
+    const output = counter.querySelector(".unified-goatcounter-count");
     try {
       const base = window.goatcounterEndpoint.replace(/\/count\/?$/, "/");
       const paths = [counter.dataset.goatcounterPath, ...(counter.dataset.goatcounterLegacyPaths || "").split("|")];
