@@ -382,7 +382,17 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{
+      },{id: "cs336-assignment-1-bpe-tokenizer-amp-transformer-basics",
+          title: 'Assignment 1: BPE Tokenizer &amp;amp; Transformer Basics',
+          description: "Assignment 1 笔记占位页。结构可按 Part 拆分，右侧 TOC 会跟着标题生成。",
+          section: "Cs336",handler: () => {
+              window.location.href = "/blog/cs336/assignment-1/";
+            },},{id: "cs336-lecture-1-intro-amp-tokenization",
+          title: 'Lecture 1: Intro &amp;amp; Tokenization',
+          description: "CS336 Lecture 1 笔记占位页。把 tokenization 相关内容填到下面各节即可。",
+          section: "Cs336",handler: () => {
+              window.location.href = "/blog/cs336/lecture-1/";
+            },},{
         id: 'social-emails',
         title: 'Emails',
         section: 'Socials',
