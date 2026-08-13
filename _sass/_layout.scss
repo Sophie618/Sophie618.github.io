@@ -110,7 +110,7 @@ html[data-theme="dark"] body.blog-index-page::before {
     348px 856px rgba(255, 253, 248, 0.67),
     1363px 42px rgba(255, 253, 248, 0.84),
     295px 431px rgba(255, 253, 248, 0.74);
-  animation: home-stars-drift 76s linear infinite;
+  animation: home-stars-drift 50s linear infinite;
 }
 
 html[data-theme="dark"] body.home-page::after,
@@ -138,7 +138,7 @@ html[data-theme="dark"] body.blog-index-page::after {
     1569px 391px rgba(255, 253, 248, 0.27),
     340px 596px rgba(255, 253, 248, 0.3),
     1339px 627px rgba(255, 253, 248, 0.49);
-  animation: home-stars-drift 116s linear infinite;
+  animation: home-stars-drift 100s linear infinite;
 }
 
 body.home-page > .container,
