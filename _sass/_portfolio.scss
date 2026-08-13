@@ -251,6 +251,16 @@
   .badge {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
+
+  // Bootstrap tables keep a near-black text color; force theme text on CV.
+  .table,
+  .table-cv,
+  .table td,
+  .table th,
+  .font-weight-light,
+  .font-weight-bold {
+    color: var(--global-text-color) !important;
+  }
 }
 
 [role="main"] a:not(.btn):not(.latest-post-link) {

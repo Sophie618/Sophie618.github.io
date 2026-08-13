@@ -31,12 +31,12 @@ body.sticky-bottom-footer {
 
 html[data-theme="dark"] body.home-page,
 html[data-theme="dark"] body.blog-index-page,
-html[data-theme="dark"] body.projects-page {
+html[data-theme="dark"] body.projects-page,
+html[data-theme="dark"] body.cv-page {
   position: relative;
   overflow-x: hidden;
-  background:
-    linear-gradient(rgba(38, 33, 41, 0.88), rgba(38, 33, 41, 0.88)),
-    var(--global-bg-color);
+  background-color: var(--global-bg-color);
+  background-image: linear-gradient(rgba(38, 33, 41, 0.88), rgba(38, 33, 41, 0.88));
 }
 
 html[data-theme="dark"] body.home-page::before,
@@ -44,11 +44,13 @@ html[data-theme="dark"] body.home-page::after,
 html[data-theme="dark"] body.blog-index-page::before,
 html[data-theme="dark"] body.blog-index-page::after,
 html[data-theme="dark"] body.projects-page::before,
-html[data-theme="dark"] body.projects-page::after {
+html[data-theme="dark"] body.projects-page::after,
+html[data-theme="dark"] body.cv-page::before,
+html[data-theme="dark"] body.cv-page::after {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -58,7 +60,8 @@ html[data-theme="dark"] body.projects-page::after {
 
 html[data-theme="dark"] body.home-page::before,
 html[data-theme="dark"] body.blog-index-page::before,
-html[data-theme="dark"] body.projects-page::before {
+html[data-theme="dark"] body.projects-page::before,
+html[data-theme="dark"] body.cv-page::before {
   box-shadow:
     1567px 888px rgba(255, 253, 248, 0.58),
     399px 697px rgba(255, 253, 248, 0.74),
@@ -119,7 +122,8 @@ html[data-theme="dark"] body.projects-page::before {
 
 html[data-theme="dark"] body.home-page::after,
 html[data-theme="dark"] body.blog-index-page::after,
-html[data-theme="dark"] body.projects-page::after {
+html[data-theme="dark"] body.projects-page::after,
+html[data-theme="dark"] body.cv-page::after {
   box-shadow:
     435px 363px rgba(255, 253, 248, 0.39),
     1480px 93px rgba(255, 253, 248, 0.38),
@@ -151,9 +155,11 @@ body.home-page > footer,
 body.blog-index-page > .container,
 body.blog-index-page > footer,
 body.projects-page > .container,
-body.projects-page > footer {
+body.projects-page > footer,
+body.cv-page > .container,
+body.cv-page > footer {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 @keyframes home-stars-drift {
