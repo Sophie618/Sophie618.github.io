@@ -1,10 +1,10 @@
 <div
   id="giscus_thread"
-  {% if page.layout == 'post' %}
+  {% if page.layout == 'post' or page.layout == 'cs336' %}
     style="max-width: {{ site.max_width }}; margin: 0 auto;"
   {% endif %}
 >
-  {% if page.layout == 'post' %}
+  {% if page.layout == 'post' or page.layout == 'cs336' %}
     <br>
   {% endif %}
 

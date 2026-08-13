@@ -4,8 +4,38 @@
   {% assign indexed_posts = site.posts | where: 'sophie_translation', true %}
 {% endif %}
 
-{% if indexed_posts.size > 0 %}
-  <div class="blog-index-list" aria-label="Blog posts">
+<div class="blog-index-list" aria-label="Blog posts">
+  <a class="blog-index-entry blog-index-cs336" href="{{ '/blog/cs336/lecture-1/' | relative_url }}">
+    <h2>{{ site.data.cs336.title }}</h2>
+    <p class="blog-index-summary">{{ site.data.cs336.description }}</p>
+    <p class="blog-index-meta">
+      {% assign cs336_legacy_paths = site.data.cs336.view_count_legacy_paths | join: '|' %}
+      {% assign cs336_legacy_lookup = cs336_legacy_paths | prepend: '|' | append: '|' %}
+      {% for doc in site.cs336 %}
+        {% assign doc_lookup_path = doc.url | prepend: '|' | append: '|' %}
+        {% unless doc.url == site.data.cs336.view_count_path or cs336_legacy_lookup contains doc_lookup_path %}
+          {% if cs336_legacy_paths != '' %}
+            {% assign cs336_legacy_paths = cs336_legacy_paths | append: '|' %}
+          {% endif %}
+          {% assign cs336_legacy_paths = cs336_legacy_paths | append: doc.url %}
+          {% assign cs336_legacy_lookup = cs336_legacy_lookup | append: doc.url | append: '|' %}
+        {% endunless %}
+      {% endfor %}
+      <span
+        data-goatcounter-path="{{ site.data.cs336.view_count_path }}"
+        {% if cs336_legacy_paths != '' %}
+          data-goatcounter-legacy-paths="{{ cs336_legacy_paths }}"
+        {% endif %}
+        ><i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="unified-goatcounter-count">--</span> views</span
+      >
+      {% assign cs336_tags = site.data.cs336.tags | slice: 0, 3 %}
+      {% for tag in cs336_tags %}
+        &nbsp;&middot;&nbsp;<span class="blog-index-tag">#{{ tag }}</span>
+      {% endfor %}
+    </p>
+  </a>
+
+  {% if indexed_posts.size > 0 %}
     {% for post in indexed_posts %}
       {% assign view_count_path = post.view_count_path | default: post.url %}
       <article class="blog-index-entry">
@@ -16,7 +46,7 @@
           <p class="blog-index-summary">{{ post.description }}</p>
         {% endif %}
         <p class="blog-index-meta">
-          Created on {{ post.date | date: '%B %d, %Y' }}
+          {{ post.date | date: '%B %d, %Y' }}
           <span
             data-goatcounter-path="{{ view_count_path }}"
             {% if post.view_count_legacy_paths %}
@@ -27,7 +57,7 @@
         </p>
       </article>
     {% endfor %}
-  </div>
-{% else %}
-  <p class="blog-index-empty">First notes are on the way.</p>
-{% endif %}
+  {% else %}
+    <p class="blog-index-empty">First notes are on the way.</p>
+  {% endif %}
+</div>

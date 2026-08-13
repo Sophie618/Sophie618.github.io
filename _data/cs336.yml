@@ -1,0 +1,22 @@
+title: CS 336
+description: hi👋！This is my little space for CS336 notes, thoughts and assignments. I’d love to hear your thoughts.
+
+view_count_path: /blog/cs336/lecture-1/
+view_count_legacy_paths:
+  - /blog/cs336/
+  - /blog/cs336/assignment-1/
+tags:
+  - LLM
+  - Tokenization
+  - Transformer
+  - Scaling Laws
+  - Systems
+sections:
+  - title: Lectures
+    items:
+      - title: "Lecture 1: Intro & Tokenization"
+        path: /blog/cs336/lecture-1/
+  - title: Assignments
+    items:
+      - title: Assignment 1
+        path: /blog/cs336/assignment-1/

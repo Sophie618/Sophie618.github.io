@@ -1,0 +1,31 @@
+{% assign current_path = page.url | remove: 'index.html' %}
+{% unless current_path contains '/blog/cs336' %}
+  {% assign current_path = '/blog/cs336/' %}
+{% endunless %}
+
+<nav class="cs336-series-nav" aria-label="CS336 series">
+  <div class="cs336-series-brand">
+    <a href="{{ '/blog/cs336/lecture-1/' | relative_url }}" class="cs336-series-title">{{ site.data.cs336.title }}</a>
+    {% if site.data.cs336.description %}
+      <p class="cs336-series-desc">{{ site.data.cs336.description }}</p>
+    {% endif %}
+  </div>
+
+  {% for section in site.data.cs336.sections %}
+    <div class="cs336-series-section">
+      <p class="cs336-series-heading">{{ section.title }}</p>
+      <ul>
+        {% for item in section.items %}
+          {% assign item_path = item.path | append: '/' | replace: '//', '/' %}
+          {% assign is_active = false %}
+          {% if current_path == item.path or current_path == item_path %}
+            {% assign is_active = true %}
+          {% endif %}
+          <li{% if is_active %} class="is-active"{% endif %}>
+            <a href="{{ item.path | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</nav>

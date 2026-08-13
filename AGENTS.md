@@ -16,6 +16,15 @@ A simple, clean, and responsive Jekyll theme for academics.
 - Before publishing, inspect every display-math block in both languages. Short formulas that function grammatically as part of a sentence (for example, between “needs” and “units”) should use inline math. Keep multi-line derivations, emphasized constraints, boxed conclusions, arrays, and other structurally important equations in display mode. Apply each decision consistently to both language versions.
 - Build and inspect both rendered pages before publishing.
 
+## Site-specific series long-form blog rule
+
+- Use the `cs336` layout (left series nav + right in-page TOC) for multi-chapter course notes and other serialized long-form writing inside Blog—not the standard `post` layout with top-of-page TOC or reading-theme tools.
+- Series pages must follow a **monochrome reading canvas** that is independent from the site-wide purple-tinted theme. Day mode: white background (`#ffffff`) with near-black text (`#111111`). Night mode: true dark background (`#121212`) with light gray text (`#e0e0e0`)—matching the day/night palette used on [edgep.me long-form posts](https://edgep.me/blog/sparse-attention-co-design-en/), not the default al-folio dark purple (`#262129`).
+- Keep purple only as an accent (links, active sidebar items, tags). Do not tint the page background or body text with site-wide lavender in either mode.
+- Reuse `_sass/_cs336.scss` tokens (`--cs336-*`) for any new series on this layout; extend that file rather than inventing a separate colored theme.
+- Do not enable paper/eye-comfort backgrounds or bilingual toggle tools on series pages. Follow the global site theme toggle (`html[data-theme]`) for day/night switching.
+- Enable `giscus_comments: true` on every series page. Use the same GoatCounter `view_count_path` / `view_count_legacy_paths` aggregation rules as bilingual blog posts when a page has multiple URLs.
+
 ## Quick Links by Role
 
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)

@@ -48,6 +48,10 @@ latest_posts:
   </p>
 
   <p>
+    I enjoy thoughtful input and usually get back to you. <a href="mailto:3441606266@qq.com">Connect with me!</a>
+  </p>
+
+  <p>
     I welcome conversations about research collaborations and future opportunities. More background:
     <a href="{{ '/assets/pdf/wang-yifei-cv-en.pdf' | relative_url }}">English CV</a> /
     <a href="{{ '/assets/pdf/wang-yifei-cv.pdf' | relative_url }}">中文简历</a>.

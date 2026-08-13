@@ -153,6 +153,9 @@ collections:
     output: true
   teachings:
     output: true
+  cs336:
+    output: true
+    permalink: /blog/cs336/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -239,6 +242,14 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: cs336
+    values:
+      layout: cs336
+      giscus_comments: true
+      toc:
+        sidebar: right
 
 sass:
   style: compressed

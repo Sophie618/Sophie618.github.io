@@ -1,5 +1,18 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang }}">
+{% assign url_prefix = page.url | slice: 0, 6 %}
+{% assign is_blog_page = false %}
+{% if url_prefix == '/blog/' %}{% assign is_blog_page = true %}{% endif %}
+{% assign is_blog_index = false %}
+{% if page.blog_index %}{% assign is_blog_index = true %}{% endif %}
+{% assign is_cs336_page = false %}
+{% if page.layout == 'cs336' or page.url contains '/blog/cs336' %}{% assign is_cs336_page = true %}{% endif %}
+{% assign is_projects_page = false %}
+{% if page.url == '/projects/' %}{% assign is_projects_page = true %}{% endif %}
+{% assign is_cv_page = false %}
+{% if page.url == '/cv/' %}{% assign is_cv_page = true %}{% endif %}
+{% assign is_home_page = false %}
+{% if page.url == '/' %}{% assign is_home_page = true %}{% endif %}
+<html lang="{{ page.lang | default: site.lang }}"{% if is_cs336_page %} class="cs336-page"{% endif %}>
   <!-- Head -->
   <head>
     {% if page.redirect %}
@@ -16,23 +29,18 @@
   </head>
 
   <!-- Body -->
-  {% assign url_prefix = page.url | slice: 0, 6 %}
-  {% assign is_blog_page = false %}
-  {% if url_prefix == '/blog/' %}{% assign is_blog_page = true %}{% endif %}
-  {% assign is_blog_index = false %}
-  {% if page.blog_index %}{% assign is_blog_index = true %}{% endif %}
-  {% assign is_projects_page = false %}
-  {% if page.url == '/projects/' %}{% assign is_projects_page = true %}{% endif %}
-  {% assign is_cv_page = false %}
-  {% if page.url == '/cv/' %}{% assign is_cv_page = true %}{% endif %}
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if is_blog_page %} blog-page{% endif %}{% if is_blog_index %} blog-index-page{% endif %}{% if is_projects_page %} projects-page{% endif %}{% if is_cv_page %} cv-page{% endif %}">
+  <body
+    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if is_home_page %} home-page{% endif %}{% if is_blog_page and is_cs336_page == false %} blog-page{% endif %}{% if is_blog_index %} blog-index-page{% endif %}{% if is_cs336_page %} cs336-page{% endif %}{% if is_projects_page %} projects-page{% endif %}{% if is_cv_page %} cv-page{% endif %}"
+  >
     <!-- Header -->
     {% include header.liquid %}
-    {% if is_blog_page %}{% include blog_tools.liquid %}{% endif %}
+    {% if is_blog_page and is_cs336_page == false %}{% include blog_tools.liquid %}{% endif %}
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
-      {% if page.toc and page.toc.sidebar %}
+    <div class="container mt-5{% if is_cs336_page %} cs336-container{% endif %}" role="main">
+      {% if is_cs336_page %}
+        {{ content }}
+      {% elsif page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
             <!-- main content area -->

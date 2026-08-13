@@ -253,7 +253,7 @@
   }
 }
 
-[role="main"] a:not(.btn) {
+[role="main"] a:not(.btn):not(.latest-post-link) {
   color: var(--global-link-color) !important;
 
   &:hover,
@@ -360,7 +360,7 @@
 
   span,
   a {
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
   }
 
   .latest-post-link {
@@ -368,6 +368,18 @@
     display: inline-block;
     width: fit-content;
     padding-left: 2.5em;
+    color: var(--global-text-color);
+    text-decoration: none;
+    transition: color 0.12s ease;
+
+    span {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--global-theme-color);
+    }
   }
 
   .latest-post-icon {
@@ -882,9 +894,14 @@
 }
 
 .cv .card {
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0.9rem;
-  box-shadow: none;
+  margin-top: 0 !important;
+  padding: 1.35rem 0 !important;
+  border-top: 1px solid var(--global-divider-color);
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0 !important;
+  }
 }
 
 @media (max-width: 767px) {
