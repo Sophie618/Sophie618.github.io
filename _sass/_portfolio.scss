@@ -263,7 +263,7 @@
   }
 }
 
-[role="main"] a:not(.btn):not(.latest-post-link) {
+[role="main"] a:not(.btn):not(.latest-post-link):not(.blog-index-entry):not(.blog-index-title) {
   color: var(--global-link-color) !important;
 
   &:hover,

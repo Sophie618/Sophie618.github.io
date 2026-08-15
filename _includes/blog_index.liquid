@@ -40,7 +40,7 @@
       {% assign view_count_path = post.view_count_path | default: post.url %}
       <article class="blog-index-entry">
         <h2>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <a class="blog-index-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h2>
         {% if post.description %}
           <p class="blog-index-summary">{{ post.description }}</p>

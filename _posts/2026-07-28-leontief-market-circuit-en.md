@@ -359,6 +359,24 @@ $$
 \min\left\{\frac{\text{number of CPUs}}{1},\frac{\text{number of memory modules}}{2}\right\}.
 $$
 
+<figure class="blog-inline-figure">
+  <img
+    src="{{ '/assets/img/blog/leontief-perfect-complements.png' | relative_url }}"
+    alt="Leontief perfect complements: one latte requires one unit of coffee beans and two units of milk; unmatched extras do not raise utility. After selling her endowment, the agent buys β complete bundles."
+    width="100%"
+    height="auto"
+  >
+  <img
+    src="{{ '/assets/img/blog/leontief-fun.png' | relative_url }}"
+    alt="Leontief utility: the utility level βᵢ equals endowment value divided by the price of one complete bundle, and optimal consumption is xᵢⱼ = Aᵢⱼ βᵢ."
+    width="100%"
+    height="auto"
+  >
+  <figcaption class="caption">
+    Leontief preferences as perfect complements. Making one latte requires one unit of coffee beans and two units of milk; extra beans or milk alone do not raise utility. The agent then sells her endowment, uses the income to buy \(\beta_i\) complete latte bundles, and therefore consumes \(x_{ij}=A_{ij}\beta_i\) units of each good.
+  </figcaption>
+</figure>
+
 An optimal bundle for a Leontief agent therefore preserves fixed proportions.
 
 ### C. What Is a Nash Equilibrium?

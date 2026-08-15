@@ -370,6 +370,24 @@ $$
 \right\}.
 $$
 
+<figure class="blog-inline-figure">
+  <img
+    src="{{ '/assets/img/blog/leontief-perfect-complements.png' | relative_url }}"
+    alt="Leontief 完全互补：一杯拿铁需要 1 单位咖啡豆和 2 单位牛奶；比例不对则无法提高效用。代理人卖出禀赋后，用收入购买 β 份完整组合。"
+    width="100%"
+    height="auto"
+  >
+  <img
+    src="{{ '/assets/img/blog/leontief-fun.png' | relative_url }}"
+    alt="Leontief 效用：效用水平 βᵢ 由禀赋价值除以一份完整组合的价格决定，最优消费为 xᵢⱼ = Aᵢⱼ βᵢ。"
+    width="100%"
+    height="auto"
+  >
+  <figcaption class="caption">
+    Leontief 偏好即完全互补。做一杯拿铁需要 1 单位咖啡豆和 2 单位牛奶；单独多出来的豆或奶都不会提高效用。代理人随后卖出禀赋，用收入购买 \(\beta_i\) 份完整拿铁组合，因此每种商品的消费量为 \(x_{ij}=A_{ij}\beta_i\)。
+  </figcaption>
+</figure>
+
 因此，Leontief 代理人的最优商品束会保持固定比例。
 
 ### C. 什么是 Nash equilibrium？
