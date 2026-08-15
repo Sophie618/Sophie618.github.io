@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const counts = await Promise.all(
         uniquePaths.map(async (path) => {
           const response = await fetch(`${base}counter/${encodeURIComponent(path)}.json`);
+          if (response.status === 404) return 0;
           if (!response.ok) throw new Error();
           const data = await response.json();
           return Number(data.count || 0);
