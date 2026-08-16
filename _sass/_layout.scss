@@ -55,8 +55,8 @@ html[data-theme="dark"] body.cv-page > .container::before {
   top: 0;
   left: 0;
   z-index: 0;
-  width: 1px;
-  height: 1px;
+  width: 1.2px;
+  height: 1.2px;
   background: rgba(255, 253, 248, 0.72);
   border-radius: 50%;
   pointer-events: none;
@@ -67,8 +67,8 @@ html[data-theme="dark"] body.home-page::before,
 html[data-theme="dark"] body.blog-index-page::before,
 html[data-theme="dark"] body.projects-page::before,
 html[data-theme="dark"] body.cv-page::before {
-  width: 2px;
-  height: 2px;
+  width: 2.8px;//星星大小
+  height: 2.8px;
   filter: drop-shadow(0 0 4px rgba(255, 253, 248, 0.72));
   box-shadow:
     1567px 888px rgba(255, 253, 248, 0.58),
@@ -132,8 +132,8 @@ html[data-theme="dark"] body.home-page::after,
 html[data-theme="dark"] body.blog-index-page::after,
 html[data-theme="dark"] body.projects-page::after,
 html[data-theme="dark"] body.cv-page::after {
-  width: 1.5px;
-  height: 1.5px;
+  width: 1.8px;
+  height: 1.8px;
   filter: drop-shadow(0 0 3px rgba(255, 253, 248, 0.5));
   box-shadow:
     435px 363px rgba(255, 253, 248, 0.39),
@@ -157,7 +157,21 @@ html[data-theme="dark"] body.cv-page::after {
     847px 670px rgba(255, 253, 248, 0.39),
     1569px 391px rgba(255, 253, 248, 0.27),
     340px 596px rgba(255, 253, 248, 0.3),
-    1339px 627px rgba(255, 253, 248, 0.49);
+    1339px 627px rgba(255, 253, 248, 0.49),
+    78px 184px rgba(255, 253, 248, 0.41),
+    248px 1088px rgba(255, 253, 248, 0.36),
+    572px 412px rgba(255, 253, 248, 0.44),
+    764px 118px rgba(255, 253, 248, 0.33),
+    918px 894px rgba(255, 253, 248, 0.4),
+    1122px 248px rgba(255, 253, 248, 0.37),
+    1394px 978px rgba(255, 253, 248, 0.45),
+    1548px 712px rgba(255, 253, 248, 0.32),
+    186px 328px rgba(255, 253, 248, 0.29),
+    652px 786px rgba(255, 253, 248, 0.43),
+    1088px 1144px rgba(255, 253, 248, 0.34),
+    1416px 468px rgba(255, 253, 248, 0.38),
+    312px 92px rgba(255, 253, 248, 0.31),
+    498px 1046px rgba(255, 253, 248, 0.4);
   animation: home-stars-drift 60s linear infinite;
 }
 
@@ -181,7 +195,32 @@ html[data-theme="dark"] body.cv-page > .container::before {
     616px 641px rgba(255, 253, 248, 0.27),
     1094px 96px rgba(255, 253, 248, 0.32),
     1539px 692px rgba(255, 253, 248, 0.25),
-    384px 1168px rgba(255, 253, 248, 0.29);
+    384px 1168px rgba(255, 253, 248, 0.29),
+    196px 168px rgba(255, 253, 248, 0.27),
+    404px 588px rgba(255, 253, 248, 0.23),
+    688px 356px rgba(255, 253, 248, 0.31),
+    812px 892px rgba(255, 253, 248, 0.26),
+    1048px 124px rgba(255, 253, 248, 0.29),
+    1228px 748px rgba(255, 253, 248, 0.22),
+    1388px 112px rgba(255, 253, 248, 0.33),
+    1564px 428px rgba(255, 253, 248, 0.25),
+    48px 1044px rgba(255, 253, 248, 0.28),
+    348px 812px rgba(255, 253, 248, 0.21),
+    964px 1088px rgba(255, 253, 248, 0.3),
+    1288px 996px rgba(255, 253, 248, 0.24),
+    158px 454px rgba(255, 253, 248, 0.26),
+    276px 236px rgba(255, 253, 248, 0.31),
+    456px 918px rgba(255, 253, 248, 0.22),
+    544px 488px rgba(255, 253, 248, 0.29),
+    772px 64px rgba(255, 253, 248, 0.24),
+    856px 612px rgba(255, 253, 248, 0.33),
+    1002px 764px rgba(255, 253, 248, 0.21),
+    1144px 368px rgba(255, 253, 248, 0.28),
+    1316px 224px rgba(255, 253, 248, 0.32),
+    1422px 868px rgba(255, 253, 248, 0.23),
+    1548px 1160px rgba(255, 253, 248, 0.27),
+    64px 412px rgba(255, 253, 248, 0.3),
+    628px 1028px rgba(255, 253, 248, 0.25);
   animation: home-stars-drift 106s linear infinite;
 }
 
