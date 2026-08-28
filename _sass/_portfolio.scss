@@ -203,6 +203,10 @@
     margin-bottom: 1.4rem;
     font-size: 1.08rem;
   }
+
+  strong {
+    font-weight: 700;
+  }
 }
 
 // Match long-form body copy on Projects and CV to the About page.
@@ -1081,5 +1085,134 @@
     .items {
       padding-left: 1.25rem;
     }
+  }
+}
+
+// About beliefs — scoped under .home-about so rules load after Bootstrap/MDB and beat ul/li defaults.
+.home-about .beliefs {
+  margin: 1.25rem 0;
+}
+
+.home-about .beliefs-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.2rem 0;
+  max-width: 100%;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::marker {
+    content: "";
+  }
+}
+
+.home-about .beliefs-heading {
+  display: inline;
+  min-width: 0;
+}
+
+.home-about .beliefs-title {
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--global-text-color);
+  transition: color 0.15s ease;
+}
+
+.home-about .beliefs-note {
+  font-size: 0.88em;
+  font-style: italic;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--global-text-color-light) 82%, var(--global-theme-color));
+  margin-left: 0.2em;
+}
+
+.home-about .beliefs-summary:hover .beliefs-title {
+  color: var(--global-theme-color);
+}
+
+.home-about .beliefs-chevron {
+  flex-shrink: 0;
+  align-self: center;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-left: 0.15rem;
+  border-right: 1px solid color-mix(in srgb, var(--global-theme-color) 38%, var(--global-text-color-light));
+  border-bottom: 1px solid color-mix(in srgb, var(--global-theme-color) 38%, var(--global-text-color-light));
+  transform: rotate(45deg);
+  transform-origin: 35% 65%;
+  transition: transform 0.2s ease;
+}
+
+.home-about .beliefs[open] .beliefs-chevron {
+  transform: rotate(-135deg);
+}
+
+.home-about .beliefs .beliefs-content {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  padding-left: 1.625rem;
+  border-left: 1px solid color-mix(in srgb, var(--global-theme-color) 22%, transparent);
+  max-width: 100%;
+  list-style: disc;
+  list-style-position: inside;
+
+  li {
+    margin: 0 0 0.3rem;
+    padding-left: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.96rem;
+    font-weight: 400;
+    line-height: 1.48;
+    color: var(--global-text-color);
+
+    &::marker {
+      color: var(--global-theme-color);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.home-about .beliefs[open] .beliefs-content {
+  animation: beliefs-reveal 0.18s ease-out;
+}
+
+@keyframes beliefs-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-about .beliefs .beliefs-content {
+    padding-left: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-about .beliefs-title {
+    transition: none;
+  }
+
+  .home-about .beliefs-chevron {
+    transition: none;
+  }
+
+  .home-about .beliefs[open] .beliefs-content {
+    animation: none;
   }
 }

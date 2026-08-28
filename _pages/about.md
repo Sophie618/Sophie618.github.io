@@ -37,15 +37,28 @@ latest_posts:
         aria-hidden="true"
       >Beijing Institute of Technology</a
     >, majoring in Computer Science and Technology.
-    My current interests center on <strong>reinforcement learning with long-term memory, self-evolving models,
-    recursive learning and self-improvement, multimodal foundation models, and model interpretability</strong>.
+    My current interests center on
+    <strong>reinforcement learning with long-term memory, self-evolving models and self-improvement, multimodal foundation models, and model interpretability</strong>.
+    I am particularly interested in how agents can learn from memory, improve through recursive feedback, and evolve over long-horizon interactions.
   </p>
 
-  <p>
-    I am interested in how agents can use memory as part of learning and decision-making, improve their own capabilities
-    through recursive feedback loops, and evolve over long-horizon interactions. I also study multimodal representations
-    and model interpretability.
-  </p>
+  <details class="beliefs">
+  <summary class="beliefs-summary">
+    <span class="beliefs-heading">
+      <span class="beliefs-title">A few things I’ve come to believe</span>
+      <span class="beliefs-note">— a growing list</span>
+    </span>
+    <span class="beliefs-chevron" aria-hidden="true"></span>
+  </summary>
+
+  <ul class="beliefs-content">
+    <li>Good taste is built slowly, then compounds.</li>
+    <li>Writing is part of thinking.</li>
+    <li>Curiosity and genuine interest are still the best teachers I know.</li>
+    <li>Understanding why something fails is often more useful than making it work once.</li>
+</ul>
+
+</details>
 
   <p>
     I enjoy thoughtful input and usually get back to you. <a href="mailto:3441606266@qq.com">Connect with me!</a>
