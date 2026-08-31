@@ -52,7 +52,7 @@ latest_posts:
   </summary>
 
   <ul class="beliefs-content">
-    <li>Good taste is built slowly, then compounds.</li>
+    <li>Knowledge compounds. Taste compounds. So does the ability to get things done.</li>
     <li>Writing is part of thinking.</li>
     <li>Curiosity and genuine interest are still the best teachers I know.</li>
     <li>Understanding why something fails is often more useful than making it work once.</li>
